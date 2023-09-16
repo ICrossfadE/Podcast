@@ -8,6 +8,7 @@
       left: -80%;
       border-radius: 0 38px 0 0;
       background-color: $--main-color;
+      box-shadow: 20px 4px 40px #121212cf;
 
       ul {
         flex-direction: column;
@@ -21,6 +22,12 @@
         display: block;
         transition: all 0.5s ease;
       }
+    }
+  }
+
+  .header-block__container {
+    .header-block__wrapper {
+      width: calc(894px / 1240px * 100%);
     }
   }
 }
