@@ -1,42 +1,30 @@
-<svg width="180" height="75" viewBox="0 0 180 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group 18140" filter="url(#filter0_d_1546_2899)">
-<rect id="Rectangle 8314" x="45" y="32.9552" width="1.2986" height="8.37235" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8315" x="48.3488" y="31.2795" width="1.2986" height="11.7213" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8319" x="62.861" y="31.8372" width="1.2986" height="10.605" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8323" x="76.8148" y="31.8372" width="1.2986" height="10.605" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8327" x="90.7689" y="24.5808" width="1.2986" height="25.1171" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8325" x="83.5126" y="31.8372" width="1.2986" height="10.605" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8329" x="98.025" y="30.7218" width="1.2986" height="12.8376" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8335" x="118.677" y="30.7218" width="1.2986" height="12.8376" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8331" x="104.723" y="24.5808" width="1.2986" height="25.1171" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8333" x="111.979" y="24.5808" width="1.2986" height="25.1171" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8332" x="108.072" y="19" width="1.2986" height="36.2802" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8330" x="101.374" y="26.8141" width="1.2986" height="20.6518" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8334" x="115.328" y="26.8141" width="1.2986" height="20.6518" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8337" x="129.282" y="26" width="1.2986" height="23" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8339" x="133.189" y="31.8372" width="1.2986" height="10.605" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8338" x="125.932" y="26.2565" width="1.2986" height="21.7681" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8336" x="122.584" y="26.8141" width="1.2986" height="20.6518" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8328" x="94.118" y="27.3718" width="1.2986" height="19.5355" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8322" x="72.9077" y="29.0475" width="1.2986" height="16.1866" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8326" x="87.4196" y="26.8141" width="1.2986" height="20.6518" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8316" x="52.2565" y="30.1641" width="1.2986" height="14.5121" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8320" x="66.2096" y="29.0475" width="1.2986" height="16.7447" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8317" x="55.6051" y="24.5808" width="1.2986" height="24.5589" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8318" x="58.9539" y="26.8141" width="1.2986" height="20.0936" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8321" x="69.559" y="26.2565" width="1.2986" height="21.21" rx="0.649301" fill="black"/>
-<rect id="Rectangle 8324" x="80.1638" y="25.1384" width="1.2986" height="23.4426" rx="0.649301" fill="black"/>
-</g>
-<defs>
-<filter id="filter0_d_1546_2899" x="0" y="-22" width="179.487" height="126.28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="22.5"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.55 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1546_2899"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1546_2899" result="shape"/>
-</filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="75" viewBox="0 0 180 75" fill="none">
+  <g>
+    <rect x="45" y="32.9552" width="1.2986" height="8.37235" rx="0.649301" fill="black"/>
+    <rect x="48.3488" y="31.2795" width="1.2986" height="11.7213" rx="0.649301" fill="black"/>
+    <rect x="62.861" y="31.8372" width="1.2986" height="10.605" rx="0.649301" fill="black"/>
+    <rect x="76.8148" y="31.8372" width="1.2986" height="10.605" rx="0.649301" fill="black"/>
+    <rect x="90.7689" y="24.5808" width="1.2986" height="25.1171" rx="0.649301" fill="black"/>
+    <rect x="83.5126" y="31.8372" width="1.2986" height="10.605" rx="0.649301" fill="black"/>
+    <rect x="98.025" y="30.7218" width="1.2986" height="12.8376" rx="0.649301" fill="black"/>
+    <rect x="118.677" y="30.7218" width="1.2986" height="12.8376" rx="0.649301" fill="black"/>
+    <rect x="104.723" y="24.5808" width="1.2986" height="25.1171" rx="0.649301" fill="black"/>
+    <rect x="111.979" y="24.5808" width="1.2986" height="25.1171" rx="0.649301" fill="black"/>
+    <rect x="108.072" y="19" width="1.2986" height="36.2802" rx="0.649301" fill="black"/>
+    <rect x="101.374" y="26.8141" width="1.2986" height="20.6518" rx="0.649301" fill="black"/>
+    <rect x="115.328" y="26.8141" width="1.2986" height="20.6518" rx="0.649301" fill="black"/>
+    <rect x="129.282" y="26" width="1.2986" height="23" rx="0.649301" fill="black"/>
+    <rect x="133.189" y="31.8372" width="1.2986" height="10.605" rx="0.649301" fill="black"/>
+    <rect x="125.932" y="26.2565" width="1.2986" height="21.7681" rx="0.649301" fill="black"/>
+    <rect x="122.584" y="26.8141" width="1.2986" height="20.6518" rx="0.649301" fill="black"/>
+    <rect x="94.118" y="27.3718" width="1.2986" height="19.5355" rx="0.649301" fill="black"/>
+    <rect x="72.9077" y="29.0475" width="1.2986" height="16.1866" rx="0.649301" fill="black"/>
+    <rect x="87.4196" y="26.8141" width="1.2986" height="20.6518" rx="0.649301" fill="black"/>
+    <rect x="52.2565" y="30.1641" width="1.2986" height="14.5121" rx="0.649301" fill="black"/>
+    <rect x="66.2096" y="29.0475" width="1.2986" height="16.7447" rx="0.649301" fill="black"/>
+    <rect x="55.6051" y="24.5808" width="1.2986" height="24.5589" rx="0.649301" fill="black"/>
+    <rect x="58.9539" y="26.8141" width="1.2986" height="20.0936" rx="0.649301" fill="black"/>
+    <rect x="69.559" y="26.2565" width="1.2986" height="21.21" rx="0.649301" fill="black"/>
+    <rect x="80.1638" y="25.1384" width="1.2986" height="23.4426" rx="0.649301" fill="black"/>
+  </g>
 </svg>

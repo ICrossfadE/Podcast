@@ -101,12 +101,16 @@ header .header__container .header-buttons button:nth-last-child(2) {
   cursor: pointer;
 }
 
+.header-block__container {
+  margin-bottom: 270px;
+}
 .header-block__container .header-block__wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-top: 148px;
   margin-left: 15px;
+  margin-bottom: 60px;
   width: 52.7419354839%;
   user-select: none;
 }
@@ -121,6 +125,77 @@ header .header__container .header-buttons button:nth-last-child(2) {
   font-size: clamp(1.25rem, 0.966rem + 1.42vw, 1.875rem);
   font-weight: 400;
   line-height: 30px; /* 100% */
+  color: #fff;
+}
+.header-block__container .header-pre-listening {
+  display: flex;
+  width: max-content;
+  padding: 19px 32px;
+  margin-bottom: 40px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 39px;
+  background-color: #00eb6c;
+}
+.header-block__container .header-pre-listening p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  color: #191d23;
+}
+.header-block__container .header-pre-listening div {
+  display: block;
+  width: 90px;
+  height: 36px;
+  background: url("../img/icons/Group 18140.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-block__container .header-pre-listening button {
+  width: 31px;
+  height: 31px;
+  background-image: url("../img/icons/Group 17767.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-block__container .header-authors {
+  display: flex;
+  align-items: center;
+}
+.header-block__container .header-authors .authors-avatars {
+  display: flex;
+  width: 160px;
+}
+.header-block__container .header-authors .authors-avatars img {
+  width: 52px;
+  height: 52px;
+  border-radius: 52px;
+}
+.header-block__container .header-authors .authors-avatars img:nth-child(2) {
+  position: relative;
+  left: -21px;
+}
+.header-block__container .header-authors .authors-avatars img:nth-child(3) {
+  position: relative;
+  left: -42px;
+}
+.header-block__container .header-authors .authors-avatars div {
+  position: relative;
+  left: -63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  min-height: 52px;
+  border-radius: 52px;
+  background-color: #38383a;
+  color: #fff;
+}
+.header-block__container .header-authors p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
   color: #fff;
 }
 
@@ -141,8 +216,11 @@ header .header__container .header-buttons button:nth-last-child(2) {
     padding-left: 44px;
   }
   .header__container .header-buttons button#header-menu {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.5s ease;
+    cursor: pointer;
   }
   .header-block__container .header-block__wrapper {
     width: 72.0967741935%;

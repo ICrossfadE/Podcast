@@ -19,8 +19,11 @@
 
     .header-buttons {
       button#header-menu {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: all 0.5s ease;
+        cursor: pointer;
       }
     }
   }
