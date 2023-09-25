@@ -9,7 +9,7 @@
 
 // ===========================================================================BODY
 
-body {
+.header-wrapper {
   background-image: url(@img/img/backgrounds/main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 114px;
-    margin-top: clamp(0rem, -0.449rem + 2.24vw, 2.188rem);
+    padding-top: clamp(0rem, -0.449rem + 2.24vw, 2.188rem);
 
     .header-logo {
       position: relative;
@@ -113,7 +113,7 @@ header {
 }
 
 .header-block__container {
-  margin-bottom: 270px;
+  padding-bottom: 270px;
   .header-block__wrapper {
     display: flex;
     flex-direction: column;

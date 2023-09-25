@@ -14,7 +14,7 @@
   margin: 0 auto;
 }
 
-body {
+.baground-wrapper {
   background-image: url(../img/img/backgrounds/main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,7 @@ header .header__container {
   justify-content: space-between;
   align-items: center;
   height: 114px;
-  margin-top: clamp(0rem, -0.449rem + 2.24vw, 2.188rem);
+  padding-top: clamp(0rem, -0.449rem + 2.24vw, 2.188rem);
 }
 header .header__container .header-logo {
   position: relative;
@@ -102,7 +102,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
 }
 
 .header-block__container {
-  margin-bottom: 270px;
+  padding-bottom: 270px;
 }
 .header-block__container .header-block__wrapper {
   display: flex;

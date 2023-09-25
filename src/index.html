@@ -2,7 +2,10 @@
 <html lang="en">
   @@include('html/head.html', { "title": "Podcast" })
   <body>
-    @@include('html/header.html', {}) @@include('html/header-block.html', {})
-    @@include('html/audio-player.html', {})
+    <div class="header-wrapper">
+      @@include('html/header.html', {}) @@include('html/header-block.html', {})
+    </div>
+
+    <section>@@include('html/audio-player.html', {})</section>
   </body>
 </html>
