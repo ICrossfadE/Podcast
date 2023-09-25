@@ -130,7 +130,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
 .header-block__container .header-pre-listening {
   display: flex;
   width: max-content;
-  padding: 19px 32px;
+  padding: clamp(0.875rem, 0.652rem + 1.12vw, 1.188rem) clamp(1rem, 0.286rem + 3.57vw, 2rem);
   margin-bottom: 40px;
   align-items: center;
   gap: 10px;
@@ -138,7 +138,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   background-color: #00eb6c;
 }
 .header-block__container .header-pre-listening p {
-  font-size: 20px;
+  font-size: clamp(0.875rem, 0.798rem + 0.38vw, 1.25rem);
   font-weight: 600;
   line-height: 30px; /* 150% */
   color: #191d23;
@@ -168,8 +168,8 @@ header .header__container .header-buttons button:nth-last-child(2) {
   width: 160px;
 }
 .header-block__container .header-authors .authors-avatars img {
-  width: 52px;
-  height: 52px;
+  width: clamp(2.938rem, 2.714rem + 1.12vw, 3.25rem);
+  height: clamp(2.938rem, 2.714rem + 1.12vw, 3.25rem);
   border-radius: 52px;
 }
 .header-block__container .header-authors .authors-avatars img:nth-child(2) {
@@ -186,14 +186,15 @@ header .header__container .header-buttons button:nth-last-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 52px;
-  min-height: 52px;
+  min-width: clamp(2.938rem, 2.714rem + 1.12vw, 3.25rem);
+  min-height: clamp(2.938rem, 2.714rem + 1.12vw, 3.25rem);
   border-radius: 52px;
   background-color: #38383a;
+  font-size: 12px;
   color: #fff;
 }
 .header-block__container .header-authors p {
-  font-size: 24px;
+  font-size: clamp(0.875rem, 0.429rem + 2.23vw, 1.5rem);
   font-weight: 400;
   line-height: 30px; /* 125% */
   color: #fff;
