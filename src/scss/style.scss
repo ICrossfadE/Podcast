@@ -223,6 +223,15 @@ header {
   }
 }
 
-// ===========================================================================
+// =====================================================================AUDIO-PLAYER
+
+.audio-player__container {
+  display: flex;
+  justify-content: space-between;
+
+  .audio-player__wrapper {
+    display: flex;
+  }
+}
 
 @import "media.scss";

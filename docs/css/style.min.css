@@ -14,7 +14,7 @@
   margin: 0 auto;
 }
 
-.baground-wrapper {
+.header-wrapper {
   background-image: url(../img/img/backgrounds/main.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,6 +198,14 @@ header .header__container .header-buttons button:nth-last-child(2) {
   font-weight: 400;
   line-height: 30px; /* 125% */
   color: #fff;
+}
+
+.audio-player__container {
+  display: flex;
+  justify-content: space-between;
+}
+.audio-player__container .audio-player__wrapper {
+  display: flex;
 }
 
 @media (max-width: 768px) {
