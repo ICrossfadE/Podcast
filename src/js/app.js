@@ -1,6 +1,9 @@
 import * as flsFunctions from "./modules/functions.js";
+import data from "./data/podcast-list.json";
 
 flsFunctions.isWebp();
+
+console.log(data);
 
 const menuButton = document.querySelector("#header-menu");
 const menuButtonIcon = document.querySelector(".ri-menu-line");

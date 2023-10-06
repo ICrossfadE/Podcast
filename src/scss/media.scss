@@ -38,3 +38,34 @@
     }
   }
 }
+
+@media (max-width: 1092px) {
+  .audio-player__container {
+    .audio-player__wrapper {
+      .audio-player__navigation {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .audio-player__container {
+    .audio-player__wrapper {
+      .audio-player-info {
+        button {
+          width: 34px;
+        }
+
+        button:nth-child(1) {
+          margin: 0;
+        }
+
+        button:nth-last-of-type(1) {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

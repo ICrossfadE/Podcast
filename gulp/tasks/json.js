@@ -9,6 +9,6 @@ export const json = () => {
         })
       )
     )
-    .pipe(app.gulp.dest(app.path.build.js))
+    .pipe(app.gulp.dest(app.path.build.json))
     .pipe(app.plugins.browserSync.stream());
 };
