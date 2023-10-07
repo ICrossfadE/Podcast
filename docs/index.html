@@ -70,17 +70,19 @@
     <section><div class="audio-player__container">
   <div class="audio-player__wrapper">
     <div class="audio-player-info">
-      <button><i class="ri-arrow-left-s-line"></i></button>
-      <div class="audio-player-art">
-        <!-- <img src="" alt="img" /> -->
-      </div>
+      <button class="audio-btn-prev">
+        <i class="ri-arrow-left-s-line"></i>
+      </button>
+      <div class="audio-player-art"></div>
       <div class="audio-player-description">
-        <p class="audio-name">Hasin haider</p>
+        <p class="audio-author">Hasin haider</p>
         <p class="audio-theme">The programing language</p>
         <p class="audio-episode">Episode 1 - Season 2</p>
         <p class="audio-timeline">12:36</p>
       </div>
-      <button><i class="ri-arrow-right-s-line"></i></button>
+      <button class="audio-btn-next">
+        <i class="ri-arrow-right-s-line"></i>
+      </button>
     </div>
 
     <div class="audio-player__navigation">
@@ -119,7 +121,7 @@
       <div class="audio-player-timeline">
         <div class="current-time">00:00</div>
         <input
-          class="seek-slider"
+          class="progress-slider"
           type="range"
           min="1"
           max="100"

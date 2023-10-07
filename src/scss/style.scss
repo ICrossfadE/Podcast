@@ -273,11 +273,11 @@ header {
         border-radius: 50%;
       }
 
-      button:nth-child(1) {
+      .audio-btn-prev {
         margin-right: 5px;
       }
 
-      button:nth-last-of-type(1) {
+      .audio-btn-next {
         margin-left: 5px;
       }
 
@@ -375,7 +375,7 @@ header {
         align-items: center;
         gap: 16px;
 
-        .seek-slider {
+        .progress-slider {
           width: 100%;
           height: 4px;
           outline: none;
@@ -384,7 +384,7 @@ header {
           box-shadow: inset 0 0 4px $--gray-light;
         }
 
-        .seek-slider::-webkit-slider-thumb {
+        .progress-slider::-webkit-slider-thumb {
           -webkit-appearance: none;
           height: 4px;
           width: 4px;

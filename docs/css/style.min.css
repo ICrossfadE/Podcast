@@ -245,10 +245,10 @@ header .header__container .header-buttons button:nth-last-child(2) {
   background-color: #e7eaee;
   border-radius: 50%;
 }
-.audio-player__container .audio-player__wrapper .audio-player-info button:nth-child(1) {
+.audio-player__container .audio-player__wrapper .audio-player-info .audio-btn-prev {
   margin-right: 5px;
 }
-.audio-player__container .audio-player__wrapper .audio-player-info button:nth-last-of-type(1) {
+.audio-player__container .audio-player__wrapper .audio-player-info .audio-btn-next {
   margin-left: 5px;
 }
 .audio-player__container .audio-player__wrapper .audio-player-info .audio-player-art {
@@ -326,7 +326,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   align-items: center;
   gap: 16px;
 }
-.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .seek-slider {
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .progress-slider {
   width: 100%;
   height: 4px;
   outline: none;
@@ -334,7 +334,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   background: #e7eaee;
   box-shadow: inset 0 0 4px #e7eaee;
 }
-.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .seek-slider::-webkit-slider-thumb {
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .progress-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 4px;
   width: 4px;
