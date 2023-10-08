@@ -11,7 +11,7 @@ flsFunctions.isWebp();
 showNavbar();
 // mainAudioPlayer();
 
-let audioIndex = 0;
+let audioIndex = 9;
 let isPlaying = false;
 let isRandom = false;
 

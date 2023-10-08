@@ -106,5 +106,17 @@
       "img": "author-5",
       "audio": "audio"
     }
+  },
+  {
+    "theme": "music",
+    "id": 10,
+    "details": {
+      "title": "The programing language",
+      "author": "Hasin Haider",
+      "episode": 1,
+      "season": 2,
+      "img": "author-5",
+      "audio": "audio"
+    }
   }
 ]
