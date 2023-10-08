@@ -54,16 +54,18 @@
   .audio-player__container {
     .audio-player__wrapper {
       .audio-player-info {
+        margin-bottom: 10px;
+
         button {
           width: 34px;
         }
 
         button:nth-child(1) {
-          margin: 0;
+          display: none;
         }
 
         button:nth-last-of-type(1) {
-          margin: 0;
+          display: none;
         }
       }
     }

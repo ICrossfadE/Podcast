@@ -1,16 +1,17 @@
 export function playPauseAudio(playing) {
   const navButtonPlay = document.querySelector(".playpause-track");
   const navButtonPlayIcon = document.querySelector(".ri-play-fill");
+  const audio = document.querySelector(".audio-content");
   let audioState = playing;
 
   function playTrack() {
-    // Audio.play()
+    audio.play();
     audioState = true;
     navButtonPlayIcon.classList.toggle("ri-pause-line");
     navButtonPlayIcon.classList.toggle("ri-play-fill");
   }
   function pauseTrack() {
-    // Audio.pause()
+    audio.pause();
     audioState = false;
     navButtonPlayIcon.classList.toggle("ri-play-fill");
     navButtonPlayIcon.classList.toggle("ri-pause-line");

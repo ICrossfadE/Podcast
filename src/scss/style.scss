@@ -262,6 +262,16 @@ header {
       align-items: center;
       gap: clamp(0rem, -1.071rem + 5.36vw, 1.5rem);
 
+      .audio-player-art {
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
       button {
         display: flex;
         justify-content: center;

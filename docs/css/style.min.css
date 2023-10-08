@@ -235,6 +235,14 @@ header .header__container .header-buttons button:nth-last-child(2) {
   align-items: center;
   gap: clamp(0rem, -1.071rem + 5.36vw, 1.5rem);
 }
+.audio-player__container .audio-player__wrapper .audio-player-info .audio-player-art {
+  overflow: hidden;
+}
+.audio-player__container .audio-player__wrapper .audio-player-info .audio-player-art img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .audio-player__container .audio-player__wrapper .audio-player-info button {
   display: flex;
   justify-content: center;
@@ -387,13 +395,16 @@ header .header__container .header-buttons button:nth-last-child(2) {
   }
 }
 @media (max-width: 425px) {
+  .audio-player__container .audio-player__wrapper .audio-player-info {
+    margin-bottom: 10px;
+  }
   .audio-player__container .audio-player__wrapper .audio-player-info button {
     width: 34px;
   }
   .audio-player__container .audio-player__wrapper .audio-player-info button:nth-child(1) {
-    margin: 0;
+    display: none;
   }
   .audio-player__container .audio-player__wrapper .audio-player-info button:nth-last-of-type(1) {
-    margin: 0;
+    display: none;
   }
 }
