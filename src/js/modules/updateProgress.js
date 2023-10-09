@@ -11,9 +11,6 @@ export function updateProgress() {
     let currentMinutes = Math.floor(currentTime / 60);
     let currentSeconds = Math.floor(currentTime - currentMinutes * 60);
 
-    // max timeline
-    progressLine.max = duration;
-
     // add zero
     if (currentSeconds < 10) currentSeconds = "0" + currentSeconds;
 

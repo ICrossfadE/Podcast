@@ -1,9 +1,12 @@
-export function loadAudio(audioItem) {
+export function loadAudio(audioItem, volumeSlider) {
   const audioImages = document.querySelector(".audio-player-art").children[0];
   const audioAuthor = document.querySelector(".audio-author");
   const audioTheme = document.querySelector(".audio-theme");
   const audioEpisode = document.querySelector(".audio-episode");
   const audioContent = document.querySelector(".audio-content");
+
+  const audioVolumeSlider = document.querySelector(".volume-slider");
+  const progressLine = document.querySelector(".progress-slider");
 
   const durationTimeLine = document.querySelector(".total-duration");
 
@@ -14,13 +17,20 @@ export function loadAudio(audioItem) {
   audioContent.src = `../audio/${audioItem.details.audioSrc}.mp3`;
 
   audioContent.addEventListener("loadeddata", (e) => {
-    const { duration } = e.target;
+    const { duration, currentTime } = e.target;
 
     let durationMinutes = Math.floor(duration / 60);
     let durationSeconds = Math.floor(duration - durationMinutes * 60);
 
     if (durationSeconds < 10) durationSeconds = "0" + durationSeconds;
 
+    // max timeline
+    progressLine.value = currentTime;
+
     durationTimeLine.innerHTML = `${durationMinutes}:${durationSeconds}`;
+
+    audioVolumeSlider.addEventListener("input", () => {
+      volumeSlider(audioContent, audioVolumeSlider);
+    });
   });
 }

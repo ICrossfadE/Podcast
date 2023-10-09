@@ -6,6 +6,7 @@ import { loadAudio } from "./modules/loadAudio.js";
 import { playPauseAudio } from "./modules/playAudio.js";
 import { switchAudio } from "./modules/switchAudio.js";
 import { updateProgress } from "./modules/updateProgress.js";
+import { setVolume } from "./modules/setVolume.js";
 
 flsFunctions.isWebp();
 
@@ -16,9 +17,9 @@ let isPlaying = false;
 let isRandom = false;
 
 window.addEventListener("load", () => {
-  loadAudio(data[audioIndex]);
+  loadAudio(data[audioIndex], setVolume);
 });
 
-playPauseAudio(isPlaying, updateProgress);
+playPauseAudio(isPlaying);
 switchAudio(audioIndex, loadAudio, data);
 updateProgress();
