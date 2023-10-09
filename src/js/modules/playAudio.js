@@ -19,6 +19,5 @@ export function playPauseAudio(playing) {
 
   navButtonPlay.addEventListener("click", () => {
     audioState ? pauseTrack() : playTrack();
-    console.log(audioState);
   });
 }

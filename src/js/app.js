@@ -5,16 +5,20 @@ import { mainAudioPlayer } from "./modules/mainAudioPlayer.js";
 import { loadAudio } from "./modules/loadAudio.js";
 import { playPauseAudio } from "./modules/playAudio.js";
 import { switchAudio } from "./modules/switchAudio.js";
+import { updateProgress } from "./modules/updateProgress.js";
 
 flsFunctions.isWebp();
 
 showNavbar();
-// mainAudioPlayer();
 
 let audioIndex = 9;
 let isPlaying = false;
 let isRandom = false;
 
-loadAudio(data[audioIndex]);
-playPauseAudio(isPlaying);
+window.addEventListener("load", () => {
+  loadAudio(data[audioIndex]);
+});
+
+playPauseAudio(isPlaying, updateProgress);
 switchAudio(audioIndex, loadAudio, data);
+updateProgress();
