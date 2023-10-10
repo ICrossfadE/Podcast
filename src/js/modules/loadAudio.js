@@ -6,7 +6,7 @@ export function loadAudio(audioItem, volumeSlider) {
   const audioContent = document.querySelector(".audio-content");
 
   const audioVolumeSlider = document.querySelector(".volume-slider");
-  const progressLine = document.querySelector(".progress-slider");
+  const progressLine = document.querySelector(".progress-line");
 
   const durationTimeLine = document.querySelector(".total-duration");
 

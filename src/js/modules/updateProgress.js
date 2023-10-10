@@ -1,11 +1,11 @@
 export function updateProgress() {
   let currentTimeLine = document.querySelector(".current-time");
-  const progressLine = document.querySelector(".progress-slider");
+  const progressLine = document.querySelector(".progress-line");
+  const progressContainer = document.querySelector(".progress-wrapper");
   const audio = document.querySelector(".audio-content");
 
-  audio.addEventListener("timeupdate", (e) => {
+  function updateTimeline(e) {
     const { duration, currentTime } = e.target;
-    let seekPosition = 0;
 
     //audio time
     let currentMinutes = Math.floor(currentTime / 60);
@@ -15,9 +15,22 @@ export function updateProgress() {
     if (currentSeconds < 10) currentSeconds = "0" + currentSeconds;
 
     //update timeline
-    seekPosition = currentTime * (100 / duration);
-    progressLine.value = seekPosition;
+    let progressPercent = 0;
+    progressPercent = (currentTime / duration) * 100;
+    progressLine.style.width = `${progressPercent}%`;
 
     currentTimeLine.innerHTML = `${currentMinutes}:${currentSeconds}`;
-  });
+  }
+
+  function setProgressTimeline(e) {
+    const width = this.clientWidth;
+    const clickX = e.offsetX;
+    const duration = audio.duration;
+
+    audio.currentTime = (clickX / width) * duration;
+  }
+
+  audio.addEventListener("timeupdate", updateTimeline);
+
+  progressContainer.addEventListener("click", setProgressTimeline);
 }
