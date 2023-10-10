@@ -311,6 +311,9 @@ header .header__container .header-buttons button:nth-last-child(2) {
   border-radius: 100px;
   border: 1px solid #e7eaee;
 }
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation .audio-volume {
+  cursor: pointer;
+}
 .audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation .audio-volume .volume-slider {
   width: 86px;
   height: 4px;
@@ -349,6 +352,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   transition: width 0.1s linear;
 }
 .audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .current-time {
+  width: 40px;
   font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
 }
 .audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .total-duration {

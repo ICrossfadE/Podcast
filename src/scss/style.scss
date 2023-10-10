@@ -357,6 +357,8 @@ header {
         }
 
         .audio-volume {
+          cursor: pointer;
+
           .volume-slider {
             width: 86px;
             height: 4px;
@@ -401,6 +403,7 @@ header {
         }
 
         .current-time {
+          width: 40px;
           font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
         }
 

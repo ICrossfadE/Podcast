@@ -6,6 +6,8 @@ export function loadAudio(audioItem, volumeSlider) {
   const audioContent = document.querySelector(".audio-content");
 
   const audioVolumeSlider = document.querySelector(".volume-slider");
+  const audioVolumeIcon = document.querySelector(".ri-volume-up-fill");
+
   const progressLine = document.querySelector(".progress-line");
 
   const durationTimeLine = document.querySelector(".total-duration");
