@@ -1,5 +1,5 @@
 import * as flsFunctions from "./modules/isWebp.js";
-import data from "./data/podcast-list.json";
+import data from "../js/data/podcast-list.json";
 import { showNavbar } from "./modules/showNavbar.js";
 import { loadAudio } from "./modules/loadAudio.js";
 import { playPauseAudio } from "./modules/playAudio.js";
