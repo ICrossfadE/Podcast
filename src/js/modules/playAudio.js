@@ -4,7 +4,7 @@ export function playPauseAudio(playing) {
   const audio = document.querySelector(".audio-content");
   let audioState = playing;
 
-  let progressLine = document.querySelector(".progress-slider");
+  // let progressLine = document.querySelector(".progress-slider");
 
   function playTrack() {
     audio.play();

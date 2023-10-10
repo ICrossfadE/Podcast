@@ -328,27 +328,27 @@ header .header__container .header-buttons button:nth-last-child(2) {
   border-radius: 50%;
   background: #191d23;
   box-shadow: -402px 0 0 400px #38383a;
+  transition: width 0.1s linear;
 }
 .audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .progress-slider {
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .progress-wrapper {
   width: 100%;
   height: 4px;
   outline: none;
   overflow: hidden;
   background: #e7eaee;
-  box-shadow: inset 0 0 4px #e7eaee;
+  cursor: pointer;
 }
-.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .progress-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 4px;
-  width: 4px;
-  border-radius: 50%;
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .progress-wrapper .progress-line {
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
   background: #00eb6c;
-  box-shadow: -402px 0 0 400px #00eb6c;
+  transition: width 0.1s linear;
 }
 .audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline .current-time {
   font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
