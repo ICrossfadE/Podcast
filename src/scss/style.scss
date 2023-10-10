@@ -279,8 +279,15 @@ header {
         width: 32px;
         height: clamp(1.75rem, 0.988rem + 3.81vw, 2rem);
         font-size: clamp(1.25rem, 0.488rem + 3.81vw, 1.5rem);
-        background-color: #e7eaee;
+        background-color: $--gray-light;
         border-radius: 50%;
+        box-shadow: 1px 3px 9px rgba(56, 56, 58, 0.4);
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: $--back-color;
+        color: $--gray-light;
       }
 
       .audio-btn-prev {
@@ -300,6 +307,7 @@ header {
       }
 
       .audio-player-description {
+        width: clamp(6.625rem, 0.464rem + 30.8vw, 15.25rem);
         color: #777;
         font-size: clamp(0.75rem, 0.661rem + 0.45vw, 0.875rem);
         font-weight: 400;

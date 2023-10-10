@@ -1,7 +1,6 @@
 export function playPauseAudio(playing) {
   const navButtonPlay = document.querySelector(".playpause-track");
   const navButtonPlayIcon = document.querySelector(".ri-play-fill");
-  const progressLine = document.querySelector(".progress-line");
   const audio = document.querySelector(".audio-content");
   let audioState = playing;
 

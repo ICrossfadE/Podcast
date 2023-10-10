@@ -2,6 +2,8 @@ export function switchAudio(index, load, audioItem) {
   const audioBtnNext = document.querySelector(".audio-btn-next");
   const audioBtnPrev = document.querySelector(".audio-btn-prev");
 
+  const navButtonPlayIcon = document.querySelector(".ri-play-fill");
+
   const navButtonNext = document.querySelector(".next-track");
   const navButtonPrev = document.querySelector(".prev-track");
 
@@ -12,6 +14,11 @@ export function switchAudio(index, load, audioItem) {
     }
 
     load(audioItem[index]);
+
+    if (navButtonPlayIcon.classList.contains("ri-pause-line")) {
+      navButtonPlayIcon.classList.remove("ri-pause-line");
+      navButtonPlayIcon.classList.add("ri-play-fill");
+    }
   }
 
   function prev() {
@@ -21,6 +28,11 @@ export function switchAudio(index, load, audioItem) {
     }
 
     load(audioItem[index]);
+
+    if (navButtonPlayIcon.classList.contains("ri-pause-line")) {
+      navButtonPlayIcon.classList.remove("ri-pause-line");
+      navButtonPlayIcon.classList.add("ri-play-fill");
+    }
   }
 
   audioBtnPrev.addEventListener("click", prev);

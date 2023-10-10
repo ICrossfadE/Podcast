@@ -252,6 +252,12 @@ header .header__container .header-buttons button:nth-last-child(2) {
   font-size: clamp(1.25rem, 0.488rem + 3.81vw, 1.5rem);
   background-color: #e7eaee;
   border-radius: 50%;
+  box-shadow: 1px 3px 9px rgba(56, 56, 58, 0.4);
+  cursor: pointer;
+}
+.audio-player__container .audio-player__wrapper .audio-player-info button:hover {
+  background-color: #191d23;
+  color: #e7eaee;
 }
 .audio-player__container .audio-player__wrapper .audio-player-info .audio-btn-prev {
   margin-right: 5px;
@@ -266,6 +272,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   border-radius: 5px;
 }
 .audio-player__container .audio-player__wrapper .audio-player-info .audio-player-description {
+  width: clamp(6.625rem, 0.464rem + 30.8vw, 15.25rem);
   color: #777;
   font-size: clamp(0.75rem, 0.661rem + 0.45vw, 0.875rem);
   font-weight: 400;
