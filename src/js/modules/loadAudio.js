@@ -22,11 +22,13 @@ export function loadAudio(audioItem, volumeSlider) {
     let durationMinutes = Math.floor(duration / 60);
     let durationSeconds = Math.floor(duration - durationMinutes * 60);
 
+    // add zero for time
     if (durationSeconds < 10) durationSeconds = "0" + durationSeconds;
 
     // max timeline
     progressLine.value = currentTime;
 
+    //add duration time on HTML
     durationTimeLine.innerHTML = `${durationMinutes}:${durationSeconds}`;
 
     audioVolumeSlider.addEventListener("input", () => {

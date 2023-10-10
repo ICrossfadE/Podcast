@@ -12,18 +12,15 @@ export function switchAudio(index, load, audioItem) {
     }
 
     load(audioItem[index]);
-    console.log("next", index);
   }
 
   function prev() {
     index--;
     if (index < 0) {
       index = audioItem.length - 1;
-      console.log("ok");
     }
 
     load(audioItem[index]);
-    console.log("prew", index);
   }
 
   audioBtnPrev.addEventListener("click", prev);

@@ -264,8 +264,6 @@ header .header__container .header-buttons button:nth-last-child(2) {
   height: clamp(4.625rem, 3.33rem + 6.47vw, 6.438rem); /*103px*/
   margin: 0 10px;
   border-radius: 5px;
-  background: url(<path-to-image>), lightgray -36.656px -4.422px/173.48% 147.455% no-repeat;
-  background-color: aquamarine;
 }
 .audio-player__container .audio-player__wrapper .audio-player-info .audio-player-description {
   color: #777;

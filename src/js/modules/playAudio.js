@@ -4,8 +4,6 @@ export function playPauseAudio(playing) {
   const audio = document.querySelector(".audio-content");
   let audioState = playing;
 
-  // let progressLine = document.querySelector(".progress-slider");
-
   function playTrack() {
     audio.play();
     audioState = true;
@@ -22,9 +20,4 @@ export function playPauseAudio(playing) {
   navButtonPlay.addEventListener("click", () => {
     audioState ? pauseTrack() : playTrack();
   });
-
-  // progressLine.addEventListener("change", () => {
-  //   audio.currentTime = progressLine.value;
-  //   // playTrack();
-  // });
 }
