@@ -4,6 +4,7 @@ export function loadAudio(audioItem, volumeSlider) {
   const audioTheme = document.querySelector(".audio-theme");
   const audioEpisode = document.querySelector(".audio-episode");
   const audioContent = document.querySelector(".audio-content");
+  const audionTime = document.querySelector(".audio-time");
 
   const audioVolumeSlider = document.querySelector(".volume-slider");
   const audioVolumeIcon = document.querySelector(".ri-volume-up-fill");
@@ -30,7 +31,8 @@ export function loadAudio(audioItem, volumeSlider) {
     // max timeline
     progressLine.value = currentTime;
 
-    //add duration time on HTML
+    //add time on HTML
+    audionTime.innerHTML = `${durationMinutes}:${durationSeconds}`;
     durationTimeLine.innerHTML = `${durationMinutes}:${durationSeconds}`;
 
     audioVolumeSlider.addEventListener("input", () => {
