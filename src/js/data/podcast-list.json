@@ -8,7 +8,7 @@
       "episode": 1,
       "season": 2,
       "img": "author-3",
-      "audio": "audio"
+      "audioSrc": "Industrial-Design-Podcast"
     }
   },
   {
@@ -20,7 +20,7 @@
       "episode": 1,
       "season": 2,
       "img": "author-1",
-      "audio": "audio"
+      "audioSrc": "Becca-Luna"
     }
   },
   {
@@ -32,7 +32,7 @@
       "episode": 1,
       "season": 2,
       "img": "author-2",
-      "audio": "audio"
+      "audioSrc": "A-Plan-Is-Not-a-Strategy"
     }
   },
   {
@@ -44,7 +44,7 @@
       "episode": 1,
       "season": 2,
       "img": "author-7",
-      "audio": "audio"
+      "audioSrc": "How-to-make-Trading-a-Career"
     }
   },
   {
@@ -56,7 +56,7 @@
       "episode": 1,
       "season": 2,
       "img": "author-4",
-      "audio": "audio"
+      "audioSrc": "How-to-create"
     }
   },
   {
@@ -68,7 +68,7 @@
       "episode": 1,
       "season": 2,
       "img": "author-6",
-      "audio": "audio"
+      "audioSrc": "ELIMINATE-NEGATIVE-THINKING"
     }
   },
   {
@@ -80,7 +80,7 @@
       "episode": 1,
       "season": 2,
       "img": "author-9",
-      "audio": "audio"
+      "audioSrc": "Secret-to-Running-a-$1-Million"
     }
   },
   {
@@ -92,7 +92,7 @@
       "episode": 1,
       "season": 2,
       "img": "author-8",
-      "audio": "audio"
+      "audioSrc": "Being-a-versatile-product-designer"
     }
   },
   {
@@ -104,7 +104,19 @@
       "episode": 1,
       "season": 2,
       "img": "author-5",
-      "audio": "audio"
+      "audioSrc": "Falling-in-Love-with-Web-Development"
+    }
+  },
+  {
+    "theme": "music",
+    "id": 10,
+    "details": {
+      "title": "The programing language",
+      "author": "Hasin Haider",
+      "episode": 1,
+      "season": 2,
+      "img": "author-12",
+      "audioSrc": "The-programing-language"
     }
   }
 ]

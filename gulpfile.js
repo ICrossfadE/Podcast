@@ -23,6 +23,7 @@ import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { json } from "./gulp/tasks/json.js";
 import { images } from "./gulp/tasks/images.js";
+import { audio } from "./gulp/tasks/audio.js";
 import { zip } from "./gulp/tasks/zip.js";
 
 // Наглядач / Watcher
@@ -35,7 +36,7 @@ function watcher() {
 }
 
 // Основні задачі / Main tasks
-const mainTasks = gulp.parallel(copy, html, scss, js, json, images);
+const mainTasks = gulp.parallel(copy, html, scss, js, json, images, audio);
 
 //Серія задач / Series tasks
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));

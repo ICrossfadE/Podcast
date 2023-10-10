@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
     rel="stylesheet"
   />
   <link
@@ -19,7 +19,9 @@
 </head>
 
   <body>
-    <header>
+    <div class="header-wrapper">
+      <header>
+  <div class="baground-wrapper"></div>
   <div class="header__container">
     <div class="header-logo">
       <span>Podcast</span>
@@ -63,5 +65,71 @@
   </div>
 </div>
 
+    </div>
+
+    <section><div class="audio-player__container">
+  <div class="audio-player__wrapper">
+    <div class="audio-player-info">
+      <button class="audio-btn-prev">
+        <i class="ri-arrow-left-s-line"></i>
+      </button>
+      <div class="audio-player-art">
+        <img alt="author" />
+      </div>
+      <div class="audio-player-description">
+        <p class="audio-author">Hasin haider</p>
+        <p class="audio-theme">The programing language</p>
+        <p class="audio-episode">Episode 1 - Season 2</p>
+        <p class="audio-time"></p>
+        <audio class="audio-content"></audio>
+      </div>
+      <button class="audio-btn-next">
+        <i class="ri-arrow-right-s-line"></i>
+      </button>
+    </div>
+
+    <div class="audio-player__navigation">
+      <div class="audio-navigation">
+        <div>
+          <div class="random-track">
+            <i class="ri-shuffle-line"></i>
+          </div>
+          <div class="prev-track">
+            <i class="ri-skip-left-fill"></i>
+          </div>
+          <div class="playpause-track">
+            <i class="ri-play-fill"></i>
+          </div>
+          <div class="next-track">
+            <i class="ri-skip-right-fill"></i>
+          </div>
+          <div class="repeat-track">
+            <i class="ri-loop-left-line"></i>
+          </div>
+        </div>
+
+        <div class="audio-volume">
+          <input
+            class="volume-slider"
+            type="range"
+            min="1"
+            max="100"
+            value="60"
+          />
+          <i class="ri-volume-up-fill"></i>
+        </div>
+      </div>
+
+      <div class="audio-player-timeline">
+        <div class="current-time">0:00</div>
+        <div class="progress-wrapper">
+          <div class="progress-line"></div>
+        </div>
+        <div class="total-duration">0:00</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
   </body>
 </html>

@@ -1,13 +1,24 @@
-import * as flsFunctions from "./modules/functions.js";
+import * as flsFunctions from "./modules/isWebp.js";
+import data from "./data/podcast-list.json";
+import { showNavbar } from "./modules/showNavbar.js";
+import { loadAudio } from "./modules/loadAudio.js";
+import { playPauseAudio } from "./modules/playAudio.js";
+import { switchAudio } from "./modules/switchAudio.js";
+import { updateProgress } from "./modules/updateProgress.js";
+import { setVolume } from "./modules/setVolume.js";
 
 flsFunctions.isWebp();
 
-const menuButton = document.querySelector("#header-menu");
-const menuButtonIcon = document.querySelector(".ri-menu-line");
-const menu = document.querySelector(".header-nav");
+showNavbar();
 
-menuButton.onclick = () => {
-  menu.classList.toggle("open");
-  menuButtonIcon.classList.toggle("ri-menu-line");
-  menuButtonIcon.classList.toggle("ri-close-line");
-};
+let audioIndex = 9;
+let isPlaying = false;
+// let isRandom = false;
+
+window.addEventListener("load", () => {
+  loadAudio(data[audioIndex], setVolume);
+});
+
+playPauseAudio(isPlaying);
+switchAudio(audioIndex, loadAudio, data);
+updateProgress();
