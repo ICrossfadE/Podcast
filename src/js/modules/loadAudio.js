@@ -7,17 +7,16 @@ export function loadAudio(audioItem, volumeSlider) {
   const audionTime = document.querySelector(".audio-time");
 
   const audioVolumeSlider = document.querySelector(".volume-slider");
-  const audioVolumeIcon = document.querySelector(".ri-volume-up-fill");
 
   const progressLine = document.querySelector(".progress-line");
 
   const durationTimeLine = document.querySelector(".total-duration");
 
-  audioImages.src = `../../img/img/author/${audioItem.details.img}.jpg`;
+  audioImages.src = `@img/img/author/${audioItem.details.img}.jpg`;
   audioAuthor.innerHTML = audioItem.details.author;
   audioTheme.innerHTML = audioItem.details.title;
   audioEpisode.innerHTML = `Episode ${audioItem.details.episode} - Season ${audioItem.details.season}`;
-  audioContent.src = `../../audio/${audioItem.details.audioSrc}.mp3`;
+  audioContent.src = `./audio/${audioItem.details.audioSrc}.mp3`;
 
   audioContent.addEventListener("loadeddata", (e) => {
     const { duration, currentTime } = e.target;
