@@ -282,12 +282,14 @@ header {
         background-color: $--gray-light;
         border-radius: 50%;
         box-shadow: 1px 3px 9px rgba(56, 56, 58, 0.4);
+        transition: all 0.2s ease;
         cursor: pointer;
       }
 
       button:hover {
         background-color: $--back-color;
         color: $--gray-light;
+        transition: all 0.2s ease;
       }
 
       .audio-btn-prev {
@@ -351,6 +353,25 @@ header {
           align-items: center;
           gap: 14px;
           font-size: 16px;
+          cursor: pointer;
+
+          .prev-track {
+            transition: all 0.2s ease;
+          }
+
+          .next-track {
+            transition: all 0.2s ease;
+          }
+
+          .prev-track:hover {
+            color: $--main-color;
+            transition: all 0.2s ease;
+          }
+
+          .next-track:hover {
+            color: $--main-color;
+            transition: all 0.2s ease;
+          }
 
           .playpause-track {
             display: flex;
@@ -361,6 +382,12 @@ header {
             font-size: 24px;
             border-radius: 100px;
             border: 1px solid $--gray-light;
+            transition: all 0.2s ease;
+          }
+
+          .playpause-track:hover {
+            color: $--main-color;
+            transition: all 0.2s ease;
           }
         }
 

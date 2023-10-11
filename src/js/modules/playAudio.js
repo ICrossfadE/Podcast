@@ -7,14 +7,19 @@ export function playPauseAudio(playing) {
   function playTrack() {
     audio.play();
     audioState = true;
-    navButtonPlayIcon.classList.toggle("ri-pause-line");
-    navButtonPlayIcon.classList.toggle("ri-play-fill");
+    if (navButtonPlayIcon.classList.contains("ri-play-fill")) {
+      navButtonPlayIcon.classList.toggle("ri-play-fill");
+      navButtonPlayIcon.classList.toggle("ri-pause-line");
+    }
   }
   function pauseTrack() {
     audio.pause();
     audioState = false;
-    navButtonPlayIcon.classList.toggle("ri-play-fill");
-    navButtonPlayIcon.classList.toggle("ri-pause-line");
+
+    if (navButtonPlayIcon.classList.contains("ri-pause-line")) {
+      navButtonPlayIcon.classList.toggle("ri-play-fill");
+      navButtonPlayIcon.classList.toggle("ri-pause-line");
+    }
   }
 
   navButtonPlay.addEventListener("click", () => {

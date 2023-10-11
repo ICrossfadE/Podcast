@@ -29,7 +29,7 @@ export function switchAudio(index, load, audioItem) {
 
     load(audioItem[index]);
 
-    if (navButtonPlayIcon.classList.contains("ri-pause-line")) {
+    if (navButtonPlayIcon.classList.contains("ri-pause-fill")) {
       navButtonPlayIcon.classList.remove("ri-pause-line");
       navButtonPlayIcon.classList.add("ri-play-fill");
     }

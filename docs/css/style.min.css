@@ -253,11 +253,13 @@ header .header__container .header-buttons button:nth-last-child(2) {
   background-color: #e7eaee;
   border-radius: 50%;
   box-shadow: 1px 3px 9px rgba(56, 56, 58, 0.4);
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 .audio-player__container .audio-player__wrapper .audio-player-info button:hover {
   background-color: #191d23;
   color: #e7eaee;
+  transition: all 0.2s ease;
 }
 .audio-player__container .audio-player__wrapper .audio-player-info .audio-btn-prev {
   margin-right: 5px;
@@ -307,6 +309,21 @@ header .header__container .header-buttons button:nth-last-child(2) {
   align-items: center;
   gap: 14px;
   font-size: 16px;
+  cursor: pointer;
+}
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation div .prev-track {
+  transition: all 0.2s ease;
+}
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation div .next-track {
+  transition: all 0.2s ease;
+}
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation div .prev-track:hover {
+  color: #00eb6c;
+  transition: all 0.2s ease;
+}
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation div .next-track:hover {
+  color: #00eb6c;
+  transition: all 0.2s ease;
 }
 .audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation div .playpause-track {
   display: flex;
@@ -317,6 +334,11 @@ header .header__container .header-buttons button:nth-last-child(2) {
   font-size: 24px;
   border-radius: 100px;
   border: 1px solid #e7eaee;
+  transition: all 0.2s ease;
+}
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation div .playpause-track:hover {
+  color: #00eb6c;
+  transition: all 0.2s ease;
 }
 .audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation .audio-volume {
   cursor: pointer;
