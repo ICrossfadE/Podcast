@@ -388,6 +388,44 @@ header .header__container .header-buttons button:nth-last-child(2) {
   font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
 }
 
+.popular__container .popular__wrapper .popular-title {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+}
+.popular__container .popular__wrapper .popular-block {
+  display: flex;
+  justify-content: space-between;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator {
+  display: flex;
+  align-items: center;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .playpause {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  border-radius: 100px;
+  border: 1px solid #e7eaee;
+  transition: all 0.2s ease;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .playpause:hover {
+  color: #00eb6c;
+  transition: all 0.2s ease;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator button {
+  padding: 6px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px; /* 187.5% */
+  border-radius: 55px;
+  color: #fff;
+  background: #191d23;
+}
+
 @media (max-width: 768px) {
   .header__container .header-nav {
     display: flex;

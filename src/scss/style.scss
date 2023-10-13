@@ -452,4 +452,82 @@ header {
 
 // =====================================================================POPULAR
 
+.popular__container {
+  .popular__wrapper {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    .popular-title {
+      display: flex;
+      justify-content: space-between;
+      min-width: 100%;
+      h2 {
+      }
+      p {
+      }
+    }
+
+    .popular-block {
+      display: flex;
+      justify-content: space-between;
+      .popular-images {
+        img {
+        }
+      }
+
+      .popular-description-block {
+        .author {
+        }
+        h2 {
+        }
+        .info {
+          p {
+          }
+          span {
+          }
+        }
+        .description {
+        }
+        .audio-navigator {
+          display: flex;
+          align-items: center;
+
+          .playpause {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            font-size: 24px;
+            border-radius: 100px;
+            border: 1px solid $--gray-light;
+            transition: all 0.2s ease;
+          }
+
+          .playpause:hover {
+            color: $--main-color;
+            transition: all 0.2s ease;
+          }
+
+          .audio-info {
+            .audio-episode {
+            }
+            .audio-time {
+            }
+          }
+          button {
+            padding: 6px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 30px; /* 187.5% */
+            border-radius: 55px;
+            color: #fff;
+            background: #191d23;
+          }
+        }
+      }
+    }
+  }
+}
+
 @import "media.scss";
