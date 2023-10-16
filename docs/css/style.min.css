@@ -388,14 +388,100 @@ header .header__container .header-buttons button:nth-last-child(2) {
   font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
 }
 
+.popular__container .popular__wrapper {
+  margin-bottom: 120px;
+}
 .popular__container .popular__wrapper .popular-title {
   display: flex;
   justify-content: space-between;
   min-width: 100%;
+  margin-bottom: 36px;
+}
+.popular__container .popular__wrapper .popular-title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.popular__container .popular__wrapper .popular-title p {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #777;
 }
 .popular__container .popular__wrapper .popular-block {
   display: flex;
   justify-content: space-between;
+  gap: 68px;
+}
+.popular__container .popular__wrapper .popular-block .popular-images {
+  display: flex;
+  align-items: end;
+  gap: 36px;
+}
+.popular__container .popular__wrapper .popular-block .popular-images .images-content:nth-child(1) {
+  width: 357px;
+  height: 550px;
+  border-radius: 60px;
+  user-select: none;
+  background-image: url(../img/img/backgrounds/work-2.jpg);
+  background-size: cover;
+}
+.popular__container .popular__wrapper .popular-block .popular-images .images-content:nth-child(2) {
+  position: relative;
+  width: 212px;
+  height: 396px;
+  border-radius: 60px;
+  user-select: none;
+  background-image: url(../img/img/backgrounds/work-1.jpg);
+  background-size: cover;
+  background-position-x: -354px;
+}
+.popular__container .popular__wrapper .popular-block .popular-images .images-content:nth-child(2)::before {
+  content: " ";
+  position: absolute;
+  top: -102px;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  opacity: 0.3;
+  background: #00eb6c;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .author {
+  color: #777;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px; /* 166.667% */
+  text-transform: uppercase;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 130%; /* 52px */
+  text-transform: capitalize;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .info {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  margin: 16px 0px;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .info p {
+  color: #777;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .description {
+  color: #777;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
 }
 .popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator {
   display: flex;
@@ -405,8 +491,10 @@ header .header__container .header-buttons button:nth-last-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
+  width: 43px;
+  height: 43px;
+  padding: 8px;
+  margin-right: 16px;
   font-size: 24px;
   border-radius: 100px;
   border: 1px solid #e7eaee;
@@ -416,7 +504,15 @@ header .header__container .header-buttons button:nth-last-child(2) {
   color: #00eb6c;
   transition: all 0.2s ease;
 }
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .audio-info {
+  font-size: 16px;
+  font-weight: 400;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .audio-info .audio-time {
+  color: #777;
+}
 .popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator button {
+  margin-left: 55px;
   padding: 6px 20px;
   font-size: 16px;
   font-weight: 600;
@@ -424,6 +520,12 @@ header .header__container .header-buttons button:nth-last-child(2) {
   border-radius: 55px;
   color: #fff;
   background: #191d23;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator button:hover {
+  background: #00eb6c;
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 768px) {
