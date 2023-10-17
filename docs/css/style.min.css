@@ -419,6 +419,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   gap: 36px;
 }
 .popular__container .popular__wrapper .popular-block .popular-images .images-content:nth-child(1) {
+  position: relative;
   width: 357px;
   height: 550px;
   border-radius: 60px;
@@ -435,6 +436,18 @@ header .header__container .header-buttons button:nth-last-child(2) {
   background-image: url(../img/img/backgrounds/work-1.jpg);
   background-size: cover;
   background-position-x: -354px;
+}
+.popular__container .popular__wrapper .popular-block .popular-images .images-content:nth-child(1)::before {
+  content: " ";
+  position: absolute;
+  left: calc(50% - 27.5px);
+  top: calc(50% - 27.5px);
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  background-image: url(../img/icons/Group-17767.svg);
+  background-size: cover;
+  filter: invert(1);
 }
 .popular__container .popular__wrapper .popular-block .popular-images .images-content:nth-child(2)::before {
   content: " ";
