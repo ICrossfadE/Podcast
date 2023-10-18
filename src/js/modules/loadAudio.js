@@ -12,6 +12,7 @@ export function loadAudio(audioItem, volumeSlider) {
 
   const durationTimeLine = document.querySelector(".total-duration");
 
+  //
   audioImages.src = `./img/img/author/${audioItem.details.img}.jpg`;
   audioAuthor.innerHTML = audioItem.details.author;
   audioTheme.innerHTML = audioItem.details.title;
