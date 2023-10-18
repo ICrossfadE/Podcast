@@ -633,7 +633,7 @@ header {
             transition: all 0.2s ease;
           }
 
-          .audio-info {
+          .intro-audio-info {
             font-size: clamp(
               0.75rem,
               0.571rem + 0.89vw,
@@ -641,7 +641,7 @@ header {
             ); /*320 - 768 / 12px - 16px*/
             font-weight: 400;
 
-            .audio-time {
+            .intro-audio-time {
               color: #777;
             }
           }

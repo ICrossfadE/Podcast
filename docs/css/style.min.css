@@ -521,11 +521,11 @@ header .header__container .header-buttons button:nth-last-child(2) {
   color: #00eb6c;
   transition: all 0.2s ease;
 }
-.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .audio-info {
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .intro-audio-info {
   font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem); /*320 - 768 / 12px - 16px*/
   font-weight: 400;
 }
-.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .audio-info .audio-time {
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .intro-audio-info .intro-audio-time {
   color: #777;
 }
 .popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator button {
