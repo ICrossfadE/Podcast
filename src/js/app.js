@@ -28,5 +28,5 @@ window.addEventListener("load", () => {
 
 playPauseAudio(state.isPlaying, audio, audioPlayButton, audioPlayIcon);
 playPauseAudio(state.isPlaying, introAudio, introPlayButton, introPlayIcon);
-switchAudio(state.audioIndex, loadAudio, data);
-updateProgress();
+switchAudio(state.audioIndex, loadAudio, data, audioPlayIcon);
+updateProgress(audio);

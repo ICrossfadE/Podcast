@@ -1,8 +1,7 @@
-export function updateProgress() {
+export function updateProgress(audio) {
   let currentTimeLine = document.querySelector(".current-time");
   const progressLine = document.querySelector(".progress-line");
   const progressContainer = document.querySelector(".progress-wrapper");
-  const audio = document.querySelector(".audio-content");
 
   function updateTimeline(e) {
     const { duration, currentTime } = e.target;
