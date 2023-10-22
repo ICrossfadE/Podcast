@@ -1,10 +1,9 @@
-export function loadIntroAudio() {
+export function loadIntroAudio(audio) {
   const introAudioTime = document.querySelector(".intro-audio-time");
-  const introAudioContent = document.querySelector(".intro-audio-content");
 
-  introAudioContent.src = `./audio/Becca-Luna.mp3`;
+  audio.src = `./audio/Becca-Luna.mp3`;
 
-  introAudioContent.addEventListener("loadeddata", (e) => {
+  audio.addEventListener("loadeddata", (e) => {
     const { duration } = e.target;
 
     let durationMinutes = Math.floor(duration / 60);
