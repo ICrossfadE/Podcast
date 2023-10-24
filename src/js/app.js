@@ -1,5 +1,5 @@
 import * as flsFunctions from "./modules/isWebp.js";
-import data from "../js/data/podcast-list.json";
+import { getData } from "./modules/getData.js";
 import { showNavbar } from "./modules/showNavbar.js";
 import { loadAudio } from "./modules/loadAudio.js";
 import { loadIntroAudio } from "./modules/loadIntroAudio.js";
@@ -18,6 +18,8 @@ const introPlayButton = document.querySelector(".playpause");
 const introPlayIcon = document.querySelectorAll(".ri-play-fill")[1];
 
 flsFunctions.isWebp();
+
+let data = await getData();
 
 showNavbar();
 

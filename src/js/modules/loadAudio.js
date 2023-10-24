@@ -1,4 +1,4 @@
-export function loadAudio(audioItem, volumeSlider) {
+export async function loadAudio(audioItem, volumeSlider) {
   const audioImages = document.querySelector(".audio-player-art").children[0];
   const audioAuthor = document.querySelector(".audio-author");
   const audioTheme = document.querySelector(".audio-theme");
