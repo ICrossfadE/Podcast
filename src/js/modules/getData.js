@@ -1,6 +1,6 @@
 export async function getData() {
   try {
-    const response = await fetch("http://localhost:4000/get-json");
+    const response = await fetch("https://server-podcast.fly.dev/get-json");
     if (!response.ok) {
       throw new Error("Помилка HTTP: " + response.status);
     }
