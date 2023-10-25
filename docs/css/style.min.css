@@ -66,7 +66,7 @@ header .header__container .header-logo span::before {
   left: 0px;
   width: 30px;
   height: 30px;
-  background-image: url(@img/icons/bi_mic-fill.svg);
+  background-image: url(../../img/icons/bi_mic-fill.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -167,14 +167,14 @@ header .header__container .header-buttons button:nth-last-child(2) {
   display: block;
   width: 90px;
   height: 36px;
-  background: url("@img/icons/Group-18140.svg");
+  background: url("../../img/icons/Group-18140.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .header-block__container .header-pre-listening button {
   width: 31px;
   height: 31px;
-  background-image: url("@img/icons/Group-17767.svg");
+  background-image: url("../../img/icons//Group-17767.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
@@ -582,6 +582,14 @@ header .header__container .header-buttons button:nth-last-child(2) {
   border-radius: 17px;
   border: 1px solid #efefef;
   color: #777;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.explore-more-wrapper .explore-more-header .header-navbar ul .active {
+  background-color: #00eb6c;
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.2s ease;
 }
 .explore-more-wrapper .explore-more-list {
   display: flex;
@@ -681,9 +689,6 @@ header .header__container .header-buttons button:nth-last-child(2) {
 .explore-more-wrapper .explore-more-list .list-item .item-navigation .next-track:hover {
   color: #00eb6c;
   transition: all 0.2s ease;
-}
-.explore-more-wrapper .explore-more-list .list-item:nth-child(10) {
-  display: none;
 }
 
 @media (max-width: 1092px) {

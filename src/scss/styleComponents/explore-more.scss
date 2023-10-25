@@ -31,6 +31,15 @@
           border-radius: 17px;
           border: 1px solid #efefef;
           color: #777;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+
+        .active {
+          background-color: $--main-color;
+          color: #fff;
+          font-weight: 700;
+          transition: all 0.2s ease;
         }
       }
     }
@@ -154,7 +163,7 @@
       }
     }
 
-    .list-item:nth-child(10) {
+    .list-item:nth-child(n + 10) {
       display: none;
     }
   }

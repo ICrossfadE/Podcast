@@ -1,6 +1,6 @@
 export let state = {
-  audioIndex: 9,
+  audioStartIndex: 9,
   isPlaying: false,
-  // isPlayingIntro: false,
   isRandom: false,
+  data: [],
 };

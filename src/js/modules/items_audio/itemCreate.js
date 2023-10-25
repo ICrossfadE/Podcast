@@ -41,7 +41,6 @@ class ItemElement {
         </div>
     </div>
     `;
-    console.log(this.title);
     this.parent.append(listItem);
   }
 }

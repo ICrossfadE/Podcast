@@ -11,6 +11,9 @@ import { state } from "./modules/audio_player/state.js";
 
 import { ItemElement } from "./modules/items_audio/itemCreate.js";
 import { renderItems } from "./modules/items_audio/renderItems.js";
+import { sortItems } from "./modules/sortItems.js";
+
+import { clickNavbar } from "./modules/clickNavbar.js";
 
 const audio = document.querySelector(".audio-content");
 const introAudio = document.querySelector(".intro-audio-content");
@@ -24,18 +27,19 @@ const list = document.querySelector(".explore-more-list");
 
 flsFunctions.isWebp();
 
-let data = await getData();
+state.data = await getData();
 
 showNavbar();
+clickNavbar(state.data, sortItems, renderItems, ItemElement, list);
 
 window.addEventListener("load", () => {
   loadIntroAudio(introAudio);
-  loadAudio(data[state.audioIndex], setVolume);
+  loadAudio(state.data[state.audioStartIndex], setVolume);
 
-  renderItems(data, ItemElement, list);
+  renderItems(state.data, ItemElement, list);
 });
 
 playPauseAudio(state.isPlaying, audio, audioPlayButton, audioPlayIcon);
 playPauseAudio(state.isPlaying, introAudio, introPlayButton, introPlayIcon);
-switchAudio(state.audioIndex, loadAudio, data, audioPlayIcon);
+switchAudio(state.audioStartIndex, loadAudio, state.data, audioPlayIcon);
 updateProgress(audio);
