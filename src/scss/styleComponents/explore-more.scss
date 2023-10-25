@@ -1,0 +1,161 @@
+.explore-more-wrapper {
+  padding-top: 100px;
+  padding-bottom: 120px;
+
+  .explore-more-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+
+    .header-title {
+      h2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 120%; /* 48px */
+        text-transform: capitalize;
+        color: $--back-color;
+      }
+    }
+
+    .header-navbar {
+      ul {
+        display: flex;
+        gap: 16px;
+
+        li {
+          padding: 3px 12px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 28px; /* 175% */
+          border-radius: 17px;
+          border: 1px solid #efefef;
+          color: #777;
+        }
+      }
+    }
+  }
+
+  .explore-more-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      width: 392px;
+      padding: 16px;
+      gap: 14px;
+      border-radius: 10px;
+      background: #fafafa;
+
+      .item-audio-art {
+        width: 75px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 8px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .description {
+        .item-theme {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 28px; /* 175% */
+          color: $--back-color;
+        }
+        .item-episode {
+          // overflow: hidden;
+
+          // text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 30px; /* 187.5% */
+          color: #777;
+        }
+
+        .item-audio-timeline {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .current-time {
+            font-size: 12px;
+          }
+
+          .progress-wrapper {
+            width: 117px;
+            height: 4px;
+            outline: none;
+            overflow: hidden;
+            background: $--gray-light;
+            cursor: pointer;
+
+            .progress-line {
+              height: 100%;
+              width: 0;
+              border-radius: 5px;
+              background: $--main-color;
+              transition: width 0.1s linear;
+            }
+          }
+
+          .total-duration {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .item-navigation {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .playpause-track {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 32px;
+          height: 32px;
+          font-size: 24px;
+          border-radius: 100px;
+          border: 1px solid $--gray-light;
+          transition: all 0.2s ease;
+        }
+
+        .playpause-track:hover {
+          color: $--main-color;
+          transition: all 0.2s ease;
+        }
+
+        .next-track {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 22px;
+          height: 22px;
+          border-radius: 100px;
+          border: 1px solid $--gray-light;
+          transition: all 0.2s ease;
+        }
+
+        .next-track:hover {
+          color: $--main-color;
+          transition: all 0.2s ease;
+        }
+      }
+    }
+
+    .list-item:nth-child(10) {
+      display: none;
+    }
+  }
+}
