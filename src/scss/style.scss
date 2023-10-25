@@ -738,7 +738,6 @@ header {
         height: 80px;
         overflow: hidden;
         border-radius: 8px;
-        background-color: aquamarine;
 
         img {
           height: 100%;
@@ -835,6 +834,10 @@ header {
           transition: all 0.2s ease;
         }
       }
+    }
+
+    .list-item:nth-child(10) {
+      display: none;
     }
   }
 }

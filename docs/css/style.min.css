@@ -603,7 +603,6 @@ header .header__container .header-buttons button:nth-last-child(2) {
   height: 80px;
   overflow: hidden;
   border-radius: 8px;
-  background-color: aquamarine;
 }
 .explore-more-wrapper .explore-more-list .list-item .item-audio-art img {
   height: 100%;
@@ -682,6 +681,9 @@ header .header__container .header-buttons button:nth-last-child(2) {
 .explore-more-wrapper .explore-more-list .list-item .item-navigation .next-track:hover {
   color: #00eb6c;
   transition: all 0.2s ease;
+}
+.explore-more-wrapper .explore-more-list .list-item:nth-child(10) {
+  display: none;
 }
 
 @media (max-width: 1092px) {
