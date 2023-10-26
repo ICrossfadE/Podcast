@@ -690,6 +690,9 @@ header .header__container .header-buttons button:nth-last-child(2) {
   color: #00eb6c;
   transition: all 0.2s ease;
 }
+.explore-more-wrapper .explore-more-list .list-item:nth-child(n+10) {
+  display: none;
+}
 
 @media (max-width: 1092px) {
   .audio-player__container .audio-player__wrapper .audio-player__navigation {
