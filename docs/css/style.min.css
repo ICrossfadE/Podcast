@@ -635,10 +635,10 @@ header .header__container .header-buttons button:nth-last-child(2) {
   align-items: center;
   gap: 10px;
 }
-.explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .current-time {
+.explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .current-item-time {
   font-size: 12px;
 }
-.explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .progress-wrapper {
+.explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .progress-item-wrapper {
   width: 117px;
   height: 4px;
   outline: none;
@@ -646,14 +646,14 @@ header .header__container .header-buttons button:nth-last-child(2) {
   background: #e7eaee;
   cursor: pointer;
 }
-.explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .progress-wrapper .progress-line {
+.explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .progress-item-wrapper .progress-item-line {
   height: 100%;
   width: 0;
   border-radius: 5px;
   background: #00eb6c;
   transition: width 0.1s linear;
 }
-.explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .total-duration {
+.explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .total-item-duration {
   font-size: 12px;
 }
 .explore-more-wrapper .explore-more-list .list-item .item-navigation {

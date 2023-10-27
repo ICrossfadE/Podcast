@@ -96,11 +96,11 @@
           align-items: center;
           gap: 10px;
 
-          .current-time {
+          .current-item-time {
             font-size: 12px;
           }
 
-          .progress-wrapper {
+          .progress-item-wrapper {
             width: 117px;
             height: 4px;
             outline: none;
@@ -108,7 +108,7 @@
             background: $--gray-light;
             cursor: pointer;
 
-            .progress-line {
+            .progress-item-line {
               height: 100%;
               width: 0;
               border-radius: 5px;
@@ -117,7 +117,7 @@
             }
           }
 
-          .total-duration {
+          .total-item-duration {
             font-size: 12px;
           }
         }

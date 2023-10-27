@@ -6,6 +6,7 @@ import { loadIntroAudio } from "./modules/audio_player/loadIntroAudio.js";
 import { playPauseAudio } from "./modules/audio_player/playPauseAudio.js";
 import { switchAudio } from "./modules/audio_player/switchAudio.js";
 import { updateProgress } from "./modules/audio_player/updateProgress.js";
+import { setDurationTime } from "./modules/audio_player/setDurationTime.js";
 import { setVolume } from "./modules/audio_player/setVolume.js";
 import { state } from "./modules/audio_player/state.js";
 
