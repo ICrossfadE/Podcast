@@ -19,28 +19,38 @@ import { clickNavbar } from "./modules/clickNavbar.js";
 const audio = document.querySelector(".audio-content");
 const introAudio = document.querySelector(".intro-audio-content");
 
-const audioPlayButton = document.querySelector(".playpause-track");
-const audioPlayIcon = document.querySelector(".ri-play-fill");
-const introPlayButton = document.querySelector(".playpause");
-const introPlayIcon = document.querySelectorAll(".ri-play-fill")[1];
+const playerContainer = document.querySelector(".audio-player__container");
+const popularContainer = document.querySelector(".popular__container");
 
 const list = document.querySelector(".explore-more-list");
 
-flsFunctions.isWebp();
+// Очікувати завантаження сторінки
+document.addEventListener("DOMContentLoaded", async function () {
+  try {
+    // Отримати дані з функції getData
+    state.data = await getData();
 
-state.data = await getData();
+    updatePageContent();
+  } catch (error) {
+    console.error("Помилка:", error);
+  }
 
-showNavbar();
-clickNavbar(state.data, sortItems, renderItems, ItemElement, list);
+  function updatePageContent() {
+    flsFunctions.isWebp();
 
-window.addEventListener("load", () => {
-  loadIntroAudio(introAudio);
-  loadAudio(state.data[state.audioStartIndex], setVolume);
+    showNavbar();
+    clickNavbar(state.data, sortItems, renderItems, ItemElement, list);
 
-  renderItems(state.data, ItemElement, list);
+    window.addEventListener("load", () => {
+      loadIntroAudio(introAudio);
+      loadAudio(state.data[state.audioStartIndex], setVolume);
+
+      renderItems(state.data, ItemElement, list);
+    });
+
+    playPauseAudio(state.isPlaying, audio, playerContainer);
+    playPauseAudio(state.isPlaying, introAudio, popularContainer);
+    switchAudio(state.audioStartIndex, loadAudio, state.data);
+    updateProgress(audio);
+  }
 });
-
-playPauseAudio(state.isPlaying, audio, audioPlayButton, audioPlayIcon);
-playPauseAudio(state.isPlaying, introAudio, introPlayButton, introPlayIcon);
-switchAudio(state.audioStartIndex, loadAudio, state.data, audioPlayIcon);
-updateProgress(audio);

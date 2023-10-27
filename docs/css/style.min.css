@@ -510,7 +510,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   display: flex;
   align-items: center;
 }
-.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .playpause {
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .playpause-track {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -524,7 +524,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   transition: all 0.2s ease;
   cursor: pointer;
 }
-.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .playpause:hover {
+.popular__container .popular__wrapper .popular-block .popular-description-block .audio-navigator .playpause-track:hover {
   color: #00eb6c;
   transition: all 0.2s ease;
 }
@@ -576,6 +576,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
 }
 .explore-more-wrapper .explore-more-header .header-navbar ul li {
   padding: 3px 12px;
+  width: 120%;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px; /* 175% */
@@ -583,7 +584,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   border: 1px solid #efefef;
   color: #777;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: font-weight 0.2s;
 }
 .explore-more-wrapper .explore-more-header .header-navbar ul .active {
   background-color: #00eb6c;
@@ -637,6 +638,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
 }
 .explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .current-item-time {
   font-size: 12px;
+  width: 20px;
 }
 .explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .progress-item-wrapper {
   width: 117px;
@@ -655,6 +657,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
 }
 .explore-more-wrapper .explore-more-list .list-item .description .item-audio-timeline .total-item-duration {
   font-size: 12px;
+  width: 20px;
 }
 .explore-more-wrapper .explore-more-list .list-item .item-navigation {
   display: flex;
