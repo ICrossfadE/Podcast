@@ -1,3 +1,9 @@
+// @media (max-width: 1238px) {
+//   .explore-more-list div.list-item:nth-child(n + 12) {
+//     display: none;
+//   }
+// }
+
 @media (max-width: 1092px) {
   .audio-player__container {
     .audio-player__wrapper {
@@ -65,6 +71,22 @@
   .header-block__container {
     .header-block__wrapper {
       width: calc(894px / 1240px * 100%);
+    }
+  }
+
+  .header-navbar {
+    ul.navbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+    }
+  }
+}
+
+@media (max-width: 497px) {
+  .header-navbar {
+    ul.navbar {
+      flex-direction: column;
     }
   }
 }

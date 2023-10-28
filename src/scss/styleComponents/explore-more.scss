@@ -10,7 +10,7 @@
 
     .header-title {
       h2 {
-        font-size: 40px;
+        font-size: clamp(1.5rem, 0.964rem + 2.68vw, 2.25rem);
         font-weight: 700;
         line-height: 120%; /* 48px */
         text-transform: capitalize;
@@ -21,12 +21,19 @@
     .header-navbar {
       ul {
         display: flex;
-        gap: 16px;
+        gap: clamp(
+          0.125rem,
+          -0.5rem + 3.13vw,
+          1rem
+        ); /*320 - 768 / 2px - 16px */
 
         li {
           padding: 3px 12px;
-          width: 120%;
-          font-size: 16px;
+          font-size: clamp(
+            0.875rem,
+            0.494rem + 1.9vw,
+            1rem
+          ); /*320 - 425 / 14px - 16px */
           font-weight: 400;
           line-height: 28px; /* 175% */
           border-radius: 17px;
@@ -39,7 +46,6 @@
         .active {
           background-color: $--main-color;
           color: #fff;
-          font-weight: 700;
           transition: all 0.2s ease;
         }
       }
@@ -57,7 +63,7 @@
       align-items: center;
       width: 392px;
       padding: 16px;
-      gap: 14px;
+      gap: 5px;
       border-radius: 10px;
       background: #fafafa;
 
@@ -76,17 +82,22 @@
 
       .description {
         .item-theme {
-          font-size: 16px;
+          font-size: clamp(
+            0.75rem,
+            0.571rem + 0.89vw,
+            1rem
+          ); /*320 - 768 / 12px - 16px*/
           font-weight: 600;
           line-height: 28px; /* 175% */
           color: $--back-color;
         }
         .item-episode {
-          // overflow: hidden;
-
-          // text-overflow: ellipsis;
           white-space: nowrap;
-          font-size: 16px;
+          font-size: clamp(
+            0.75rem,
+            0.571rem + 0.89vw,
+            1rem
+          ); /*320 - 768 / 12px - 16px*/
           font-weight: 400;
           line-height: 30px; /* 187.5% */
           color: #777;
@@ -95,15 +106,24 @@
         .item-audio-timeline {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: clamp(
+            0.375rem,
+            -0.387rem + 3.81vw,
+            0.625rem
+          ); /*320 - 425 / 6px - 10px*/
 
           .current-item-time {
+            min-width: 25px;
+            max-width: 25px;
             font-size: 12px;
-            width: 20px;
           }
 
           .progress-item-wrapper {
-            width: 117px;
+            width: clamp(
+              6.25rem,
+              3.012rem + 16.19vw,
+              7.313rem
+            ); /*320 - 425 / 100px - 117px*/
             height: 4px;
             outline: none;
             overflow: hidden;
@@ -120,8 +140,9 @@
           }
 
           .total-item-duration {
+            min-width: 25px;
+            max-width: 25px;
             font-size: 12px;
-            width: 20px;
           }
         }
       }
@@ -129,7 +150,11 @@
       .item-navigation {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: clamp(
+          0.25rem,
+          -0.512rem + 3.81vw,
+          0.5rem
+        ); /*320 - 425 / 4px - 8px*/
 
         .playpause-track {
           display: flex;
