@@ -6,7 +6,7 @@ import { loadIntroAudio } from "./modules/audio_player/loadIntroAudio.js";
 import { playPauseAudio } from "./modules/audio_player/playPauseAudio.js";
 import { switchAudio } from "./modules/audio_player/switchAudio.js";
 import { updateProgress } from "./modules/audio_player/updateProgress.js";
-import { setDurationTime } from "./modules/audio_player/setDurationTime.js";
+import { updateTimeline } from "./modules/audio_player/updateTimeLine.js";
 import { setVolume } from "./modules/audio_player/setVolume.js";
 import { state } from "./modules/audio_player/state.js";
 
@@ -24,33 +24,21 @@ const popularContainer = document.querySelector(".popular__container");
 
 const list = document.querySelector(".explore-more-list");
 
-// Очікувати завантаження сторінки
-document.addEventListener("DOMContentLoaded", async function () {
-  try {
-    // Отримати дані з функції getData
-    state.data = await getData();
+state.data = await getData();
 
-    updatePageContent();
-  } catch (error) {
-    console.error("Помилка:", error);
-  }
+flsFunctions.isWebp();
 
-  function updatePageContent() {
-    flsFunctions.isWebp();
+showNavbar();
+clickNavbar(state.data, sortItems, renderItems, ItemElement, list);
 
-    showNavbar();
-    clickNavbar(state.data, sortItems, renderItems, ItemElement, list);
+window.addEventListener("load", () => {
+  loadIntroAudio(introAudio);
+  loadAudio(state.data[state.audioStartIndex], setVolume);
 
-    window.addEventListener("load", () => {
-      loadIntroAudio(introAudio);
-      loadAudio(state.data[state.audioStartIndex], setVolume);
-
-      renderItems(state.data, ItemElement, list);
-    });
-
-    playPauseAudio(state.isPlaying, audio, playerContainer);
-    playPauseAudio(state.isPlaying, introAudio, popularContainer);
-    switchAudio(state.audioStartIndex, loadAudio, state.data);
-    updateProgress(audio);
-  }
+  renderItems(state.data, ItemElement, list);
 });
+
+playPauseAudio(state.isPlaying, audio, playerContainer);
+playPauseAudio(state.isPlaying, introAudio, popularContainer);
+switchAudio(state.audioStartIndex, loadAudio, state.data);
+updateProgress(audio, updateTimeline);
