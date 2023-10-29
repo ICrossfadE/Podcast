@@ -432,7 +432,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   height: clamp(28.75rem, 24.732rem + 20.09vw, 34.375rem); /*320 - 768 / 460px - 500px*/
   border-radius: 60px;
   user-select: none;
-  background-image: url(../../img/img/backgrounds/work-2.jpg);
+  background-image: url(./../img/img/backgrounds/work-2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -442,7 +442,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   height: clamp(18.5rem, 14.036rem + 22.32vw, 24.75rem); /*320 - 768 / 296px - 396px*/
   border-radius: 60px;
   user-select: none;
-  background-image: url(../../img/img/backgrounds/work-1.jpg);
+  background-image: url(./../img/img/backgrounds/work-1.jpg);
   background-size: cover;
   background-position-x: 72%;
 }
@@ -454,7 +454,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   width: 55px;
   height: 55px;
   border-radius: 10px;
-  background-image: url(../img/icons/Group-17767.svg);
+  background-image: url(./img/icons/Group-17767.svg);
   background-size: cover;
   cursor: pointer;
   filter: invert(1);
