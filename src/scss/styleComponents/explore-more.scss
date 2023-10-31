@@ -1,5 +1,6 @@
 .explore-more-wrapper {
-  padding-top: 100px;
+  padding-top: clamp(2.875rem, 0.464rem + 12.05vw, 6.25rem);
+  /*320 - 768 / 46px - 100px */
   padding-bottom: 120px;
 
   .explore-more-header {

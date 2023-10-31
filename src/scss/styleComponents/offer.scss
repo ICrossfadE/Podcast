@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  padding: 120px 0;
+  padding: clamp(0rem, -5.357rem + 26.79vw, 7.5rem) 0;
+  /*clamp 320 - 1440 / 38px - 68px*/
 
   .offer-title {
     display: flex;
@@ -19,10 +20,14 @@
     }
 
     p {
-      width: 604px;
-      padding: 0 20px;
+      padding: 0 clamp(7.25rem, -8.036rem + 31.85vw, 20.625rem);
+      /*768 - 1440 / 116px - 330px*/
       text-align: center;
-      font-size: 18px;
+      font-size: clamp(
+        0.875rem,
+        0.696rem + 0.89vw,
+        1.125rem
+      ); /*320 - 768 / 14px - 18px*/
       font-weight: 400;
       line-height: 30px; /* 166.667% */
       color: #777;
@@ -32,6 +37,8 @@
   .offer-items {
     display: flex;
     justify-content: space-between;
+    gap: clamp(2.375rem, 0.232rem + 4.46vw, 4.25rem);
+    /*clamp 768 - 1440 / 38px - 68px*/
 
     .item {
       display: flex;
@@ -57,7 +64,8 @@
 
       p {
         text-align: center;
-        font-size: 16px;
+        font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+        /*320 - 768 / 14px - 16px*/
         font-weight: 400;
         line-height: 28px; /* 175% */
         color: #747683;

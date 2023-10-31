@@ -81,6 +81,28 @@
       gap: 2px;
     }
   }
+
+  .offer-wrapper {
+    .offer-title {
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        padding: 0 20px;
+      }
+    }
+
+    .offer-items {
+      flex-direction: column;
+
+      .item {
+        p {
+          width: 250px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 497px) {
