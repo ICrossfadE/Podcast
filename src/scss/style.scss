@@ -17,8 +17,7 @@ input[type="range"] {
 body {
   background: #f7f7f7;
   section:nth-last-child(2) {
-    background: #f7f7f7;
-    padding-bottom: 1px;
+    background: #fff;
   }
   section:nth-last-child(1) {
     background: #fff;
@@ -34,7 +33,7 @@ body {
   background-position-x: center;
 }
 
-// ===========================================================================HEADER
+// =====================================================================HEADER
 
 @import "./styleComponents/header.scss";
 
@@ -49,5 +48,11 @@ body {
 // =====================================================================EXPLORE-MORE
 
 @import "./styleComponents/explore-more.scss";
+
+// =====================================================================OFFER
+
+@import "./styleComponents/offer.scss";
+
+// =====================================================================REVIEWS
 
 @import "media.scss";

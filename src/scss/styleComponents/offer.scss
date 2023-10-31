@@ -1,0 +1,96 @@
+.offer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: clamp(0rem, -5.357rem + 26.79vw, 7.5rem) 0;
+  /*clamp 320 - 1440 / 38px - 68px*/
+
+  .offer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: clamp(1.5rem, 0.964rem + 2.68vw, 2.25rem);
+      font-weight: 700;
+      line-height: 120%; /* 48px */
+      text-transform: capitalize;
+      color: $--back-color;
+    }
+
+    p {
+      padding: 0 clamp(7.25rem, -8.036rem + 31.85vw, 20.625rem);
+      /*768 - 1440 / 116px - 330px*/
+      text-align: center;
+      font-size: clamp(
+        0.875rem,
+        0.696rem + 0.89vw,
+        1.125rem
+      ); /*320 - 768 / 14px - 18px*/
+      font-weight: 400;
+      line-height: 30px; /* 166.667% */
+      color: #777;
+    }
+  }
+
+  .offer-items {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(2.375rem, 0.232rem + 4.46vw, 4.25rem);
+    /*clamp 768 - 1440 / 38px - 68px*/
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .item-logo {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+        user-select: none;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .item-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34px; /* 141.667% */
+        color: #393e45;
+      }
+
+      p {
+        text-align: center;
+        font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+        /*320 - 768 / 14px - 16px*/
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+        color: #747683;
+      }
+    }
+
+    .item:nth-child(1) {
+      .item-logo {
+        background-image: url(./../../img/icons/Group-17777.svg);
+      }
+    }
+    .item:nth-child(2) {
+      .item-logo {
+        background-image: url(./../../img/icons/Group-17776.svg);
+      }
+    }
+    .item:nth-child(3) {
+      .item-logo {
+        background-image: url(./../../img/icons/Group-17774.svg);
+      }
+    }
+    .item:nth-child(4) {
+      .item-logo {
+        background-image: url(./../../img/icons/Group-17775.svg);
+      }
+    }
+  }
+}

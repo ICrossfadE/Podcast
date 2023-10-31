@@ -1,5 +1,6 @@
 .explore-more-wrapper {
-  padding-top: 100px;
+  padding-top: clamp(2.875rem, 0.464rem + 12.05vw, 6.25rem);
+  /*320 - 768 / 46px - 100px */
   padding-bottom: 120px;
 
   .explore-more-header {
@@ -62,14 +63,16 @@
       display: flex;
       align-items: center;
       width: 392px;
-      padding: 16px;
+      padding: 16px clamp(0.25rem, -2.036rem + 11.43vw, 1rem);
+      /*320 - 425 / 4px - 16px*/
       gap: 5px;
       border-radius: 10px;
       background: #fafafa;
 
       .item-audio-art {
-        width: 75px;
-        height: 80px;
+        width: clamp(4.063rem, 2.158rem + 9.52vw, 4.688rem);
+        height: clamp(4.375rem, 2.47rem + 9.52vw, 5rem);
+        /*320 - 425 / 65/70px - 75/80px*/
         overflow: hidden;
         border-radius: 8px;
 
@@ -189,6 +192,12 @@
           transition: all 0.2s ease;
         }
       }
+    }
+
+    .active {
+      background-color: #fff;
+      transition: all 0.2s ease;
+      box-shadow: 0px 20px 125px 0px rgba(0, 0, 0, 0.1);
     }
 
     .list-item:nth-child(n + 10) {

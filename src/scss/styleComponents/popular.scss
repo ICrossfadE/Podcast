@@ -1,6 +1,7 @@
 .popular__container {
   .popular__wrapper {
-    margin-bottom: 120px;
+    margin-bottom: clamp(6.25rem, 5.357rem + 4.46vw, 7.5rem);
+    /*320 - 762 / 100px - 120px*/
 
     .popular-title {
       display: flex;

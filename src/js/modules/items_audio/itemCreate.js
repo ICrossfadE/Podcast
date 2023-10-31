@@ -42,7 +42,6 @@ class ItemElement {
     </div>
     `;
     this.parent.append(listItem);
-
     this.setDurationTime();
     this.playPause();
     this.updateProgress();

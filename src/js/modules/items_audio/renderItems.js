@@ -10,4 +10,16 @@ export function renderItems(data, itemElement, htmlElement) {
       htmlElement
     ).render();
   });
+
+  const allElements = htmlElement.querySelectorAll(".list-item");
+
+  allElements.forEach((item) => {
+    item.addEventListener("click", (event) => {
+      allElements.forEach((element) => {
+        element.classList.remove("active");
+      });
+
+      item.classList.add("active");
+    });
+  });
 }
