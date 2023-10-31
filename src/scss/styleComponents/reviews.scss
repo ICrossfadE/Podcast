@@ -1,0 +1,202 @@
+.reviews-wrapper {
+  color: #fff;
+  padding: 110px 0;
+  position: relative;
+
+  .reviews-title {
+    text-align: center;
+    margin-bottom: 50px;
+
+    p {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 30px; /* 166.667% */
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 120%; /* 48px */
+      text-transform: capitalize;
+    }
+  }
+
+  .reviews-swiper {
+    max-width: 800%;
+    width: 100%;
+    overflow: hidden;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        color: $--back-color;
+        border-radius: 30px;
+        background: #fff;
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07);
+
+        .title {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 32px; /* 145.455% */
+          text-transform: capitalize;
+        }
+
+        .info {
+          display: flex;
+          gap: 8px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 30px; /* 187.5% */
+          p {
+            color: #777;
+          }
+        }
+
+        .description {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 30px; /* 187.5% */
+          color: #777;
+        }
+
+        .author {
+          display: flex;
+          gap: 15px;
+
+          .img {
+            width: 55px;
+            height: 55px;
+            border-radius: 55px;
+          }
+
+          div {
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 26.08px; /* 163% */
+              color: #777;
+            }
+
+            p:nth-child(1) {
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 32px; /* 160% */
+              color: $--back-color;
+            }
+          }
+        }
+      }
+
+      .swiper-slide:nth-child(1) {
+        .author {
+          .img {
+            background: url(./../../img/img/author/author-4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+      }
+      .swiper-slide:nth-child(2) {
+        .author {
+          .img {
+            background: url(./../../img/img/author/author-20.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+      }
+      .swiper-slide:nth-child(3) {
+        .author {
+          .img {
+            background: url(./../../img/img/author/author-18.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+      }
+      .swiper-slide:nth-child(4) {
+        .author {
+          .img {
+            background: url(./../../img/img/author/author-28.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+      }
+      .swiper-slide:nth-child(5) {
+        .author {
+          .img {
+            background: url(./../../img/img/author/author-36.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+      }
+      .swiper-slide:nth-child(6) {
+        .author {
+          .img {
+            background: url(./../../img/img/author/author-11.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-next {
+    width: 40px;
+    height: 40px;
+    top: 60%;
+    right: -90px;
+    font-size: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: $--back-color;
+
+    transition: all 0.2s ease;
+  }
+
+  .btn-prev {
+    width: 40px;
+    height: 40px;
+    top: 60%;
+    left: -90px;
+    font-size: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: $--back-color;
+
+    transition: all 0.2s ease;
+  }
+
+  .btn-prev::after {
+    display: none;
+  }
+
+  .btn-next::after {
+    display: none;
+  }
+
+  .btn-prev:hover {
+    background-color: $--main-color;
+    color: #fff;
+    transition: all 0.2s ease;
+  }
+
+  .btn-next:hover {
+    background-color: $--main-color;
+    color: #fff;
+    transition: all 0.2s ease;
+  }
+}
