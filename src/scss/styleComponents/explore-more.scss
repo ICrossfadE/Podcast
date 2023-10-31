@@ -69,8 +69,9 @@
       background: #fafafa;
 
       .item-audio-art {
-        width: 75px;
-        height: 80px;
+        width: clamp(4.063rem, 2.158rem + 9.52vw, 4.688rem);
+        height: clamp(4.375rem, 2.47rem + 9.52vw, 5rem);
+        /*320 - 425 / 65/70px - 75/80px*/
         overflow: hidden;
         border-radius: 8px;
 
