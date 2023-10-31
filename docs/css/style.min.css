@@ -770,16 +770,16 @@ header .header__container .header-buttons button:nth-last-child(2) {
   color: #747683;
 }
 .offer-wrapper .offer-items .item:nth-child(1) .item-logo {
-  background-image: url(./../../img/icons/Group-17777.svg);
+  background-image: url(./../img/icons/Group-17777.svg);
 }
 .offer-wrapper .offer-items .item:nth-child(2) .item-logo {
-  background-image: url(./../../img/icons/Group-17776.svg);
+  background-image: url(./../img/icons/Group-17776.svg);
 }
 .offer-wrapper .offer-items .item:nth-child(3) .item-logo {
-  background-image: url(./../../img/icons/Group-17774.svg);
+  background-image: url(./../img/icons/Group-17774.svg);
 }
 .offer-wrapper .offer-items .item:nth-child(4) .item-logo {
-  background-image: url(./../../img/icons/Group-17775.svg);
+  background-image: url(./../img/icons/Group-17775.svg);
 }
 
 @media (max-width: 1092px) {
