@@ -127,7 +127,8 @@ header .header__container .header-buttons button:nth-last-child(2) {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 148px;
+  margin-top: clamp(2.375rem, -2.536rem + 24.55vw, 9.25rem);
+  /*320 - 768 / 38px - 148px*/
   margin-left: 15px;
   margin-bottom: 60px;
   width: 52.7419354839%;
@@ -601,14 +602,16 @@ header .header__container .header-buttons button:nth-last-child(2) {
   display: flex;
   align-items: center;
   width: 392px;
-  padding: 16px;
+  padding: 16px clamp(0.25rem, -2.036rem + 11.43vw, 1rem);
+  /*320 - 425 / 4px - 16px*/
   gap: 5px;
   border-radius: 10px;
   background: #fafafa;
 }
 .explore-more-wrapper .explore-more-list .list-item .item-audio-art {
-  width: 75px;
-  height: 80px;
+  width: clamp(4.063rem, 2.158rem + 9.52vw, 4.688rem);
+  height: clamp(4.375rem, 2.47rem + 9.52vw, 5rem);
+  /*320 - 425 / 65/70px - 75/80px*/
   overflow: hidden;
   border-radius: 8px;
 }
