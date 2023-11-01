@@ -1,3 +1,18 @@
+@media (max-width: 1440px) {
+  .reviews-wrapper {
+    padding: 110px clamp(3.75rem, 3.036rem + 3.57vw, 6.25rem);
+    /*320 - 1440 / 60px - 100px*/
+
+    .btn-next {
+      right: 10px;
+    }
+
+    .btn-prev {
+      left: 10px;
+    }
+  }
+}
+
 @media (max-width: 1092px) {
   .audio-player__container {
     .audio-player__wrapper {
@@ -125,6 +140,20 @@
           display: none;
         }
       }
+    }
+  }
+
+  .reviews-wrapper {
+    padding: 110px 0;
+
+    .btn-next {
+      top: 90%;
+      right: clamp(5rem, -2.619rem + 38.1vw, 7.5rem);
+    }
+
+    .btn-prev {
+      top: 90%;
+      left: clamp(5rem, -2.619rem + 38.1vw, 7.5rem);
     }
   }
 }

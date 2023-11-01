@@ -10,6 +10,16 @@ export const swiper = new Swiper(".reviews-swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  slidesPerView: 3,
+  breakpoints: {
+    1440: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 1,
+    },
+  },
   spaceBetween: 30,
 });

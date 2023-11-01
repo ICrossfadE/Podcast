@@ -3,8 +3,9 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  padding: clamp(0rem, -5.357rem + 26.79vw, 7.5rem) 0;
+  padding-top: clamp(0rem, -5.357rem + 26.79vw, 7.5rem);
   /*clamp 320 - 1440 / 38px - 68px*/
+  padding-bottom: 110px;
 
   .offer-title {
     display: flex;
