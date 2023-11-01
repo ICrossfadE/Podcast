@@ -24,13 +24,13 @@ input[type=range] {
 body {
   background: #f7f7f7;
 }
+body section:nth-child(4) {
+  background: #fff;
+}
+body section:nth-child(5) {
+  background: #fff;
+}
 body section:nth-child(6) {
-  background: #fff;
-}
-body section:nth-child(7) {
-  background: #fff;
-}
-body section:nth-child(8) {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.46) 100%), url(../img/img/backgrounds/microphone.jpg), lightgray 0px -1163.728px/100% 312.139% no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -869,43 +869,43 @@ header .header__container .header-buttons button:nth-last-child(2) {
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide .author div p:nth-child(1) {
   font-size: clamp(0.875rem, 0.607rem + 1.34vw, 1.25rem);
-  /*320 - 768 / 14px - 20px*/
+  /*320 - 768 /px - 20px*/
   font-weight: 500;
   line-height: 32px; /* 160% */
   color: #191d23;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(1) .author .img {
-  background: url(./../../img/img/author/author-4.jpg);
+  background: url(./../img/img/author/author-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(2) .author .img {
-  background: url(./../../img/img/author/author-20.jpg);
+  background: url(./../img/img/author/author-20.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(3) .author .img {
-  background: url(./../../img/img/author/author-18.jpg);
+  background: url(./../img/img/author/author-18.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(4) .author .img {
-  background: url(./../../img/img/author/author-28.jpg);
+  background: url(./../img/img/author/author-28.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(5) .author .img {
-  background: url(./../../img/img/author/author-36.jpg);
+  background: url(./../img/img/author/author-36.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(6) .author .img {
-  background: url(./../../img/img/author/author-11.jpg);
+  background: url(./../img/img/author/author-11.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
