@@ -16,11 +16,23 @@ input[type="range"] {
 
 body {
   background: #f7f7f7;
-  section:nth-last-child(2) {
+  section:nth-child(6) {
     background: #fff;
   }
-  section:nth-last-child(1) {
+  section:nth-child(7) {
     background: #fff;
+  }
+  section:nth-child(8) {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.46) 100%
+      ),
+      url(@img/img/backgrounds/microphone.jpg),
+      lightgray 0px -1163.728px / 100% 312.139% no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
   }
 }
 
@@ -52,6 +64,10 @@ body {
 // =====================================================================OFFER
 
 @import "./styleComponents/offer.scss";
+
+// =====================================================================REVIEWS
+
+@import "./styleComponents/reviews.scss";
 
 // =====================================================================REVIEWS
 

@@ -1,5 +1,6 @@
 import * as flsFunctions from "./modules/isWebp.js";
 import { getData } from "./modules/getData.js";
+import { swiper } from "./modules/swiper.js";
 import { showNavbar } from "./modules/showNavbar.js";
 import { loadAudio } from "./modules/audio_player/loadAudio.js";
 import { loadIntroAudio } from "./modules/audio_player/loadIntroAudio.js";
