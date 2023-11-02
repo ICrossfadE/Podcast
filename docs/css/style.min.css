@@ -949,6 +949,39 @@ header .header__container .header-buttons button:nth-last-child(2) {
   transition: all 0.2s ease;
 }
 
+.rate-warapper .rate-switcher div input[type=checkbox] {
+  position: absolute;
+  appearance: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.rate-warapper .rate-switcher div input[type=checkbox]:checked + .checkbox {
+  background-color: #00eb6c;
+}
+.rate-warapper .rate-switcher div input[type=checkbox]:checked + .checkbox::before {
+  transform: translateX(20px);
+}
+.rate-warapper .rate-switcher div .checkbox {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  background-color: #aeb0b8;
+  border-radius: 26px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.rate-warapper .rate-switcher div .checkbox::before {
+  content: "";
+  position: absolute;
+  margin: 2px;
+  height: 20px;
+  width: 20px;
+  border-radius: 26px;
+  background-color: #fff;
+  transition: 0.2s;
+}
 @media (max-width: 1440px) {
   .reviews-wrapper {
     padding: 110px clamp(3.75rem, 3.036rem + 3.57vw, 6.25rem);

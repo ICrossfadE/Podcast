@@ -1,0 +1,47 @@
+.rate-warapper {
+  .rate-title {
+  }
+  .rate-switcher {
+    div {
+      input[type="checkbox"] {
+        position: absolute;
+        appearance: none;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      input[type="checkbox"]:checked + .checkbox {
+        background-color: $--main-color;
+      }
+
+      input[type="checkbox"]:checked + .checkbox::before {
+        transform: translateX(20px);
+      }
+
+      .checkbox {
+        position: relative;
+        display: inline-block;
+        width: 44px;
+        height: 24px;
+        background-color: #aeb0b8;
+        border-radius: 26px;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      .checkbox::before {
+        content: "";
+        position: absolute;
+        margin: 2px;
+        height: 20px;
+        width: 20px;
+        border-radius: 26px;
+        background-color: #fff;
+        transition: 0.2s;
+      }
+    }
+  }
+  .rate-list {
+  }
+}
