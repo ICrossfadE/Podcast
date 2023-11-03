@@ -1096,6 +1096,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   color: #fff;
   background: #191d23;
   border-radius: 55px;
+  cursor: pointer;
   transition: 0.6s;
 }
 .rate-warapper .rate-list .list-item ul {
