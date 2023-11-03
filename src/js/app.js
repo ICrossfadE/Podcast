@@ -25,6 +25,8 @@ const playerContainer = document.querySelector(".audio-player__container");
 const popularContainer = document.querySelector(".popular__container");
 
 const list = document.querySelector(".explore-more-list");
+const parentRate = document.querySelector(".rate-list");
+const rateElements = parentRate.querySelectorAll(".list-item");
 
 state.data = await getData();
 
@@ -44,3 +46,4 @@ playPauseAudio(state.isPlaying, audio, playerContainer);
 playPauseAudio(state.isPlaying, introAudio, popularContainer);
 switchAudio(state.audioStartIndex, loadAudio, state.data);
 updateProgress(audio, updateTimeline);
+addActive(rateElements);
