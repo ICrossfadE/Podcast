@@ -1,7 +1,38 @@
 .rate-warapper {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .rate-title {
+    margin-bottom: 40px;
+    text-align: center;
+    h2 {
+      margin-bottom: 16px;
+      font-size: clamp(1.5rem, 0.964rem + 2.68vw, 2.25rem);
+      /*320 - 1024 / 18px - 40px*/
+      font-weight: 700;
+      line-height: 120%; /* 48px */
+      text-transform: capitalize;
+    }
+    p {
+      padding: 0 clamp(7.25rem, -8.036rem + 31.85vw, 20.625rem);
+      /*768 - 1440 / 116px - 330px*/
+      font-size: clamp(
+        0.875rem,
+        0.696rem + 0.89vw,
+        1.125rem
+      ); /*320 - 768 / 14px - 18px*/
+      font-weight: 400;
+      line-height: 30px; /* 166.667% */
+      color: #777;
+    }
   }
   .rate-switcher {
+    position: relative;
+    display: flex;
+    gap: 24px;
+
     div {
       input[type="checkbox"] {
         position: absolute;
@@ -41,7 +72,253 @@
         transition: 0.2s;
       }
     }
+
+    p:nth-last-child(1) {
+      position: relative;
+    }
+
+    p:nth-last-child(1)::after {
+      content: "Save 25%";
+      position: absolute;
+      top: 14px;
+      right: -182px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: normal;
+      color: $--main-color;
+    }
   }
+
+  .rate-switcher::after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: -106px;
+    width: 91.875px;
+    height: 55.336px;
+    transform: rotate(358deg);
+    background-image: url(./../img/icons/Arrow2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .rate-list {
+    display: flex;
+
+    // justify-content: space-between;
+    gap: 24px;
+    margin-top: 70px;
+    margin-bottom: 120px;
+
+    .list-item {
+      display: flex;
+      width: 33.33%;
+      padding: 40px 24px 50px 24px;
+      flex-direction: column;
+      border-radius: 30px;
+      background: #fff;
+      transition: 0.2s;
+
+      .item-title {
+        h3 {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        p {
+          height: 44px;
+          text-overflow: ellipsis;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      .item-price {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        transition: 0.2s;
+
+        span {
+          font-size: 56px;
+          font-weight: 600;
+          line-height: normal;
+          transition: 0.2s;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: normal;
+          transition: 0.2s;
+        }
+      }
+
+      button {
+        margin-top: 24px;
+        margin-bottom: 40px;
+        padding: 6px 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        color: #fff;
+        background: $--back-color;
+        border-radius: 55px;
+        transition: 0.2s;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        li {
+          display: flex;
+          align-items: center;
+          padding-left: 49px;
+          position: relative;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        li {
+          .ri-check-line {
+            position: absolute;
+            padding: 8px;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 100px;
+            background: #e8edfb;
+            color: $--main-color;
+            transition: 0.2s;
+          }
+
+          .ri-close-line {
+            position: absolute;
+            padding: 8px;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 100px;
+            background: #f7f8f9;
+            color: $--back-color;
+          }
+        }
+      }
+    }
+    .list-item:nth-child(1) {
+      ul {
+        li:nth-last-child(1) {
+          color: #a0abbb;
+        }
+        li:nth-last-child(2) {
+          color: #a0abbb;
+        }
+      }
+    }
+
+    .active {
+      background: $--main-color;
+      box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+      color: #fff;
+      transition: 0.2s;
+
+      .item-title {
+        h3 {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        p {
+          height: 44px;
+          text-overflow: ellipsis;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+      .item-price {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        transition: 0.2s;
+
+        span {
+          font-size: 56px;
+          font-weight: 600;
+          line-height: normal;
+          transition: 0.2s;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: normal;
+          transition: 0.2s;
+        }
+      }
+
+      button {
+        margin-top: 24px;
+        margin-bottom: 40px;
+        padding: 6px 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        color: $--main-color;
+        background: #fff;
+        border-radius: 4px;
+        transition: 0.2s;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        li {
+          display: flex;
+          align-items: center;
+          padding-left: 49px;
+          position: relative;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        li {
+          .ri-check-line {
+            position: absolute;
+            padding: 8px;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 100px;
+            background: #e8edfb;
+            color: $--back-color;
+            transition: 0.2s;
+          }
+
+          .ri-close-line {
+            position: absolute;
+            padding: 8px;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 100px;
+            background: #f7f8f9;
+            color: #ce5a67;
+          }
+        }
+      }
+    }
   }
 }

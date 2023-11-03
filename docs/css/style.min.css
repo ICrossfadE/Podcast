@@ -36,6 +36,9 @@ body section:nth-child(8) {
   background-position-y: center;
   background-position-x: center;
 }
+body section:nth-child(9) {
+  background: #fff;
+}
 
 .header-wrapper {
   background-image: url(../img/img/backgrounds/main.jpg);
@@ -949,6 +952,37 @@ header .header__container .header-buttons button:nth-last-child(2) {
   transition: all 0.2s ease;
 }
 
+.rate-warapper {
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rate-warapper .rate-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.rate-warapper .rate-title h2 {
+  margin-bottom: 16px;
+  font-size: clamp(1.5rem, 0.964rem + 2.68vw, 2.25rem);
+  /*320 - 1024 / 18px - 40px*/
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  text-transform: capitalize;
+}
+.rate-warapper .rate-title p {
+  padding: 0 clamp(7.25rem, -8.036rem + 31.85vw, 20.625rem);
+  /*768 - 1440 / 116px - 330px*/
+  font-size: clamp(0.875rem, 0.696rem + 0.89vw, 1.125rem); /*320 - 768 / 14px - 18px*/
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  color: #777;
+}
+.rate-warapper .rate-switcher {
+  position: relative;
+  display: flex;
+  gap: 24px;
+}
 .rate-warapper .rate-switcher div input[type=checkbox] {
   position: absolute;
   appearance: none;
@@ -982,6 +1016,217 @@ header .header__container .header-buttons button:nth-last-child(2) {
   background-color: #fff;
   transition: 0.2s;
 }
+.rate-warapper .rate-switcher p:nth-last-child(1) {
+  position: relative;
+}
+.rate-warapper .rate-switcher p:nth-last-child(1)::after {
+  content: "Save 25%";
+  position: absolute;
+  top: 14px;
+  right: -182px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  color: #00eb6c;
+}
+.rate-warapper .rate-switcher::after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: -106px;
+  width: 91.875px;
+  height: 55.336px;
+  transform: rotate(358deg);
+  background-image: url(./../img/icons/Arrow2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rate-warapper .rate-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+.rate-warapper .rate-list .list-item {
+  display: flex;
+  width: 33.33%;
+  padding: 40px 24px 50px 24px;
+  flex-direction: column;
+  border-radius: 30px;
+  background: #fff;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .list-item .item-title h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+}
+.rate-warapper .rate-list .list-item .item-title p {
+  height: 44px;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.rate-warapper .rate-list .list-item .item-price {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .list-item .item-price span {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: normal;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .list-item .item-price p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .list-item button {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  padding: 6px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  color: #fff;
+  background: #191d23;
+  border-radius: 55px;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .list-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.rate-warapper .rate-list .list-item ul li {
+  display: flex;
+  align-items: center;
+  padding-left: 49px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.rate-warapper .rate-list .list-item ul li .ri-check-line {
+  position: absolute;
+  padding: 8px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  background: #e8edfb;
+  color: #00eb6c;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .list-item ul li .ri-close-line {
+  position: absolute;
+  padding: 8px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  background: #f7f8f9;
+  color: #191d23;
+}
+.rate-warapper .rate-list .list-item:nth-child(1) ul li:nth-last-child(1) {
+  color: #a0abbb;
+}
+.rate-warapper .rate-list .list-item:nth-child(1) ul li:nth-last-child(2) {
+  color: #a0abbb;
+}
+.rate-warapper .rate-list .active {
+  background: #00eb6c;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .active .item-title h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+}
+.rate-warapper .rate-list .active .item-title p {
+  height: 44px;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.rate-warapper .rate-list .active .item-price {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .active .item-price span {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: normal;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .active .item-price p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .active button {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  padding: 6px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  color: #00eb6c;
+  background: #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .active ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.rate-warapper .rate-list .active ul li {
+  display: flex;
+  align-items: center;
+  padding-left: 49px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.rate-warapper .rate-list .active ul li .ri-check-line {
+  position: absolute;
+  padding: 8px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  background: #e8edfb;
+  color: #191d23;
+  transition: 0.2s;
+}
+.rate-warapper .rate-list .active ul li .ri-close-line {
+  position: absolute;
+  padding: 8px;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  background: #f7f8f9;
+  color: #ce5a67;
+}
+
 @media (max-width: 1440px) {
   .reviews-wrapper {
     padding: 110px clamp(3.75rem, 3.036rem + 3.57vw, 6.25rem);
