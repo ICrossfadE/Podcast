@@ -1,6 +1,7 @@
 import * as flsFunctions from "./modules/isWebp.js";
 import { getData } from "./modules/getData.js";
 import { swiper } from "./modules/swiper.js";
+import { addActive } from "./modules/addActive.js";
 import { showNavbar } from "./modules/showNavbar.js";
 import { loadAudio } from "./modules/audio_player/loadAudio.js";
 import { loadIntroAudio } from "./modules/audio_player/loadIntroAudio.js";
@@ -36,7 +37,7 @@ window.addEventListener("load", () => {
   loadIntroAudio(introAudio);
   loadAudio(state.data[state.audioStartIndex], setVolume);
 
-  renderItems(state.data, ItemElement, list);
+  renderItems(state.data, ItemElement, list, addActive);
 });
 
 playPauseAudio(state.isPlaying, audio, playerContainer);
