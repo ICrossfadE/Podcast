@@ -73,6 +73,11 @@
       }
     }
 
+    p {
+      font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+      /*320 - 768 / 14px - 16px*/
+    }
+
     p:nth-last-child(1) {
       position: relative;
     }
@@ -104,8 +109,6 @@
 
   .rate-list {
     display: flex;
-
-    // justify-content: space-between;
     gap: 24px;
     margin-top: 70px;
     margin-bottom: 120px;
@@ -113,7 +116,9 @@
     .list-item {
       display: flex;
       width: 33.33%;
-      padding: 40px 24px 50px 24px;
+      padding: clamp(1.25rem, 0.357rem + 4.46vw, 2.5rem) 24px
+        clamp(1.563rem, 0.446rem + 5.58vw, 3.125rem) 24px;
+      /*320 - 768 / top 20px - 40px  bottom 25px - 50px*/
       flex-direction: column;
       border-radius: 30px;
       background: #fff;
@@ -129,7 +134,8 @@
         p {
           height: 44px;
           text-overflow: ellipsis;
-          font-size: 16px;
+          font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+          /*320 - 768 / 14px - 16px*/
           font-weight: 400;
           line-height: normal;
         }
@@ -143,20 +149,24 @@
         transition: 0.01s;
 
         span {
-          font-size: 56px;
+          font-size: clamp(2.875rem, 2.429rem + 2.23vw, 3.5rem);
+          /*320 - 768 / 46px - 56px*/
           font-weight: 600;
           line-height: normal;
         }
         p {
-          font-size: 16px;
+          font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+          /*320 - 768 / 14px - 16px*/
           font-weight: 700;
           line-height: normal;
         }
       }
 
       button {
-        margin-top: 24px;
-        margin-bottom: 40px;
+        margin-top: clamp(0rem, -1.071rem + 5.36vw, 1.5rem);
+        /*320 - 768 / 0px - 24px*/
+        margin-bottom: clamp(1.438rem, 0.679rem + 3.79vw, 2.5rem);
+        /*320 - 768 / 25px - 40px*/
         padding: 6px 20px;
         text-align: center;
         font-size: 16px;
@@ -179,7 +189,8 @@
           align-items: center;
           padding-left: 49px;
           position: relative;
-          font-size: 16px;
+          font-size: clamp(0.813rem, 0.679rem + 0.67vw, 1rem);
+          /*320 - 768 / 13px - 16px*/
           font-weight: 500;
           line-height: normal;
         }
@@ -189,8 +200,9 @@
             position: absolute;
             padding: 8px;
             left: 0;
-            width: 32px;
-            height: 32px;
+            width: clamp(1.75rem, 1.571rem + 0.89vw, 2rem);
+            height: clamp(1.75rem, 1.571rem + 0.89vw, 2rem);
+            /*320 - 768 / 28px - 32px*/
             border-radius: 100px;
             background: #e8edfb;
             color: $--main-color;
@@ -201,8 +213,9 @@
             position: absolute;
             padding: 8px;
             left: 0;
-            width: 32px;
-            height: 32px;
+            width: clamp(1.75rem, 1.571rem + 0.89vw, 2rem);
+            height: clamp(1.75rem, 1.571rem + 0.89vw, 2rem);
+            /*320 - 768 / 28px - 32px*/
             border-radius: 100px;
             background: #f7f8f9;
             color: $--back-color;
@@ -286,7 +299,8 @@
           align-items: center;
           padding-left: 49px;
           position: relative;
-          font-size: 16px;
+          font-size: clamp(0.813rem, 0.679rem + 0.67vw, 1rem);
+          /*320 - 768 / 13px - 16px*/
           font-weight: 500;
           line-height: normal;
         }
@@ -296,8 +310,9 @@
             position: absolute;
             padding: 8px;
             left: 0;
-            width: 32px;
-            height: 32px;
+            width: clamp(1.75rem, 1.571rem + 0.89vw, 2rem);
+            height: clamp(1.75rem, 1.571rem + 0.89vw, 2rem);
+            /*320 - 768 / 28px - 32px*/
             border-radius: 100px;
             background: #e8edfb;
             color: $--back-color;
@@ -308,8 +323,9 @@
             position: absolute;
             padding: 8px;
             left: 0;
-            width: 32px;
-            height: 32px;
+            width: clamp(1.75rem, 1.571rem + 0.89vw, 2rem);
+            height: clamp(1.75rem, 1.571rem + 0.89vw, 2rem);
+            /*320 - 768 / 28px - 32px*/
             border-radius: 100px;
             background: #f7f8f9;
             color: #ce5a67;
