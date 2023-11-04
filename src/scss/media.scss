@@ -112,6 +112,36 @@
       }
     }
   }
+
+  .rate-warapper {
+    .rate-switcher {
+      p:nth-last-child(1)::after {
+        top: 90px;
+        right: -6px;
+        font-size: 18px;
+      }
+    }
+
+    .rate-switcher::after {
+      top: 48px;
+      right: 0px;
+      transform: rotate(110deg);
+    }
+
+    .rate-list {
+      margin-top: 125px;
+      margin-bottom: 0;
+      flex-direction: column;
+
+      .list-item {
+        width: 100%;
+
+        .item-price {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 497px) {
@@ -154,6 +184,14 @@
     .btn-prev {
       top: 90%;
       left: clamp(5rem, -2.619rem + 38.1vw, 7.5rem);
+    }
+  }
+
+  .rate-warapper {
+    .rate-title {
+      p {
+        padding: 0;
+      }
     }
   }
 }
