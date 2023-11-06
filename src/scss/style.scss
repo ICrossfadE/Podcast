@@ -39,6 +39,10 @@ body {
   //   background: #fff;
   // }
 
+  // section:nth-child(10) {
+  //   background: #fff;
+  // }
+
   section:nth-child(4) {
     background: #fff;
   }
@@ -58,6 +62,9 @@ body {
     background-position-x: center;
   }
   section:nth-child(7) {
+    background: #fff;
+  }
+  section:nth-child(8) {
     background: #fff;
   }
 }
@@ -98,5 +105,11 @@ body {
 // =====================================================================RATE
 
 @import "./styleComponents/rate.scss";
+
+// =====================================================================EMAIL-FORM
+
+@import "./styleComponents/email-form.scss";
+
+// =====================================================================FOOTER
 
 @import "media.scss";
