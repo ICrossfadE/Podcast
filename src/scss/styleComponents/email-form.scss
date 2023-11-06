@@ -11,6 +11,7 @@
     color: #fff;
     transition: 0.2s;
     overflow: hidden;
+    z-index: 1;
 
     .form-content {
       padding: 62px 0px 62px 96px;
@@ -73,7 +74,6 @@
       height: 323px;
       background: url(../../img/img/backgrounds/decorate.png), no-repeat;
       background-size: cover;
-      z-index: 1000;
     }
 
     .images-content::after {
@@ -83,11 +83,11 @@
       height: 210px;
       right: -314px;
       bottom: 0;
-      background: url(../../img/img/backgrounds//Ellipse-20.svg);
+      background: url(../../img/img/backgrounds/Ellipse-20.svg);
       background-repeat: no-repeat;
       background-size: contain;
       opacity: 0.8;
-      z-index: -1;
+      z-index: 1;
     }
 
     .images-content::before {
@@ -97,7 +97,7 @@
       height: 144px;
       right: -314px;
       bottom: 0;
-      background: url(../../img/img/backgrounds//Ellipse-19.svg);
+      background: url(../../img/img/backgrounds/Ellipse-19.svg);
       background-repeat: no-repeat;
       background-size: contain;
       opacity: 0.8;
