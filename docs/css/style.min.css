@@ -1249,7 +1249,6 @@ header .header__container .header-buttons button:nth-last-child(2) {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 354px;
   border-radius: 60px;
   background: #191d23;
@@ -1270,7 +1269,8 @@ header .header__container .header-buttons button:nth-last-child(2) {
 .email-form-wrapper .email-form-block .form-content p {
   width: 60%;
   margin-bottom: 35px;
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+  /*320 - 768 / 14px - 16px*/
   font-weight: 400;
   line-height: 30px; /* 187.5% */
 }
@@ -1289,14 +1289,16 @@ header .header__container .header-buttons button:nth-last-child(2) {
   transition: 0.1s;
 }
 .email-form-wrapper .email-form-block .form-content form input::placeholder {
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+  /*320 - 768 / 14px - 16px*/
   font-weight: 600;
   letter-spacing: -0.2px;
   color: #fff;
 }
 .email-form-wrapper .email-form-block .form-content form button {
   padding: 16px 50px;
-  font-size: 16px;
+  font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+  /*320 - 768 / 14px - 16px*/
   font-weight: 600;
   line-height: 28px; /* 175% */
   letter-spacing: -0.2px;
@@ -1324,7 +1326,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.8;
-  z-index: 1;
+  z-index: -1;
 }
 .email-form-wrapper .email-form-block .images-content::before {
   content: "";
@@ -1368,6 +1370,11 @@ header .header__container .header-buttons button:nth-last-child(2) {
   }
   .popular__container .popular-block .popular-description-block {
     padding: 0 clamp(0rem, -1.813rem + 9.07vw, 4.375rem);
+  }
+}
+@media (max-width: 1050px) {
+  .email-form-wrapper .email-form-block .images-content {
+    background: none;
   }
 }
 @media (max-width: 768px) {
@@ -1438,6 +1445,25 @@ header .header__container .header-buttons button:nth-last-child(2) {
   .rate-warapper .rate-list .list-item .item-price {
     margin-top: 0;
   }
+  .email-form-wrapper .email-form-block .form-content {
+    padding: 62px clamp(1rem, -2.571rem + 17.86vw, 6rem);
+    /*320 - 768 /  x- 16px - 96px*/
+  }
+}
+@media (max-width: 680px) {
+  .email-form-wrapper .email-form-block {
+    height: 490px;
+    transition: 0.2s;
+  }
+  .email-form-wrapper .email-form-block .form-content form {
+    flex-wrap: wrap;
+  }
+  .email-form-wrapper .email-form-block .form-content form input {
+    width: clamp(16rem, 2.667rem + 66.67vw, 19.5rem);
+    /*320 - 404 / 256px - 312px*/
+    padding: 16px clamp(1.25rem, -1.036rem + 11.43vw, 2rem);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 }
 @media (max-width: 497px) {
   .header-navbar ul.navbar {
@@ -1470,5 +1496,15 @@ header .header__container .header-buttons button:nth-last-child(2) {
   }
   .rate-warapper .rate-title p {
     padding: 0;
+  }
+  .email-form-wrapper .email-form-block .form-content p {
+    width: 100%;
+  }
+  .email-form-wrapper .email-form-block .form-content form {
+    flex-direction: column;
+  }
+  .email-form-wrapper .email-form-block .form-content form input {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
   }
 }

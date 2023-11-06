@@ -4,7 +4,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 354px;
     border-radius: 60px;
     background: #191d23;
@@ -24,9 +23,9 @@
       }
       p {
         width: 60%;
-
         margin-bottom: 35px;
-        font-size: 16px;
+        font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+        /*320 - 768 / 14px - 16px*/
         font-weight: 400;
         line-height: 30px; /* 187.5% */
       }
@@ -47,7 +46,8 @@
         }
 
         input::placeholder {
-          font-size: 16px;
+          font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+          /*320 - 768 / 14px - 16px*/
           font-weight: 600;
           letter-spacing: -0.2px;
           color: #fff;
@@ -55,7 +55,8 @@
 
         button {
           padding: 16px 50px;
-          font-size: 16px;
+          font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
+          /*320 - 768 / 14px - 16px*/
           font-weight: 600;
           line-height: 28px; /* 175% */
           letter-spacing: -0.2px;
@@ -87,7 +88,7 @@
       background-repeat: no-repeat;
       background-size: contain;
       opacity: 0.8;
-      z-index: 1;
+      z-index: -1;
     }
 
     .images-content::before {
