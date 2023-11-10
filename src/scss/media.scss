@@ -185,6 +185,69 @@
       }
     }
   }
+
+  .footer__container {
+    .footer-wrapper {
+      .footer-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        h4 {
+          font-size: clamp(1.375rem, 0.819rem + 2.78vw, 2rem);
+          /*320 - 680 / 22px - 32px*/
+          text-align: center;
+        }
+
+        button {
+          font-size: clamp(0.875rem, 0.764rem + 0.56vw, 1rem);
+          /*320 - 680 / 14px - 16px*/
+        }
+      }
+
+      .footer-info {
+        flex-direction: column-reverse;
+        gap: 60px;
+
+        .description {
+          width: 100%;
+
+          h5 {
+            font-size: clamp(0.875rem, 0.764rem + 0.56vw, 1rem);
+            /*320 - 680 / 14px - 16px*/
+          }
+
+          p {
+            padding-bottom: 20px;
+            font-size: clamp(0.625rem, 0.403rem + 1.11vw, 0.875rem);
+            /*320 - 680 / 10px - 14px*/
+          }
+        }
+
+        .help-menu {
+          display: flex;
+          justify-content: space-between;
+          margin-right: 0;
+          gap: clamp(0.625rem, -0.486rem + 5.56vw, 1.875rem);
+          /*320 - 680 / 10px - 30px*/
+
+          .menu {
+            p {
+              font-size: clamp(0.875rem, 0.764rem + 0.56vw, 1rem);
+              /*320 - 680 / 14px - 16px*/
+            }
+
+            ul {
+              li {
+                font-size: clamp(0.625rem, 0.403rem + 1.11vw, 0.875rem);
+                /*320 - 680 / 10px - 14px*/
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 497px) {

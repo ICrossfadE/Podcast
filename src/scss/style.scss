@@ -43,6 +43,10 @@ body {
   //   background: #fff;
   // }
 
+  // section:nth-child(11) {
+  //   background: #000;
+  // }
+
   section:nth-child(4) {
     background: #fff;
   }
@@ -66,6 +70,9 @@ body {
   }
   section:nth-child(8) {
     background: #fff;
+  }
+  section:nth-child(9) {
+    background: #000;
   }
 }
 
@@ -111,5 +118,6 @@ body {
 @import "./styleComponents/email-form.scss";
 
 // =====================================================================FOOTER
+@import "./styleComponents/footer.scss";
 
 @import "media.scss";

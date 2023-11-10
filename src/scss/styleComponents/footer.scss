@@ -1,0 +1,106 @@
+.footer__container {
+  max-width: 1400px;
+  color: #fff;
+
+  .footer-wrapper {
+    padding-top: 81px;
+    padding-bottom: 98px;
+
+    .footer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 56px;
+      border-bottom: solid 1px #fff;
+
+      h4 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px; /* 131.25% */
+      }
+
+      button {
+        height: 50px;
+        padding: 16px;
+        align-items: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px; /* 157.143% */
+        border-radius: 60px;
+        cursor: pointer;
+      }
+    }
+
+    .footer-info {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 56px;
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 396.248px;
+
+        h5 {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px; /* 150% */
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px; /* 157.143% */
+          padding-bottom: 60px;
+          margin-right: 10px;
+        }
+
+        .socials {
+          display: flex;
+          gap: 30px;
+
+          i {
+            font-size: 24px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .help-menu {
+        display: flex;
+        margin-right: clamp(0.625rem, -8.75rem + 19.53vw, 3.75rem);
+        /*768 - 1024 / 10px - 60px*/
+        gap: clamp(1.875rem, -5.982rem + 16.37vw, 8.75rem);
+        /*768 - 1440 / 30px - 140px*/
+
+        .menu {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+
+          p {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            li {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 40px; /* 285.714% */
+              text-wrap: nowrap;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
