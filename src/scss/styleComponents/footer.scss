@@ -54,6 +54,7 @@
           font-weight: 400;
           line-height: 22px; /* 157.143% */
           padding-bottom: 60px;
+          margin-right: 10px;
         }
 
         .socials {
@@ -69,8 +70,10 @@
 
       .help-menu {
         display: flex;
-        margin-right: 60px;
-        gap: 140px;
+        margin-right: clamp(0.625rem, -8.75rem + 19.53vw, 3.75rem);
+        /*768 - 1024 / 10px - 60px*/
+        gap: clamp(1.875rem, -5.982rem + 16.37vw, 8.75rem);
+        /*768 - 1440 / 30px - 140px*/
 
         .menu {
           display: flex;
@@ -92,6 +95,7 @@
               font-size: 14px;
               font-weight: 400;
               line-height: 40px; /* 285.714% */
+              text-wrap: nowrap;
               cursor: pointer;
             }
           }
