@@ -53,10 +53,17 @@
           font-size: 14px;
           font-weight: 400;
           line-height: 22px; /* 157.143% */
+          padding-bottom: 60px;
         }
 
         .socials {
           display: flex;
+          gap: 30px;
+
+          i {
+            font-size: 24px;
+            cursor: pointer;
+          }
         }
       }
 
