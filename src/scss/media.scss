@@ -71,9 +71,11 @@
 
       ul {
         flex-direction: column;
-        padding-top: 22px;
-        padding-left: 44px;
-        padding-bottom: 22px;
+
+        li {
+          text-align: center;
+          line-height: 50px;
+        }
       }
     }
 

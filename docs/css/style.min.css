@@ -91,7 +91,7 @@ header .header__container .header-nav {
 }
 header .header__container .header-nav ul {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   font-size: clamp(0.875rem, 0.798rem + 0.38vw, 1.25rem);
   font-weight: 400;
   line-height: 32px; /* 160% */
@@ -1490,9 +1490,10 @@ header .header__container .header-buttons button:nth-last-child(2) {
   }
   .header__container .header-nav ul {
     flex-direction: column;
-    padding-top: 22px;
-    padding-left: 44px;
-    padding-bottom: 22px;
+  }
+  .header__container .header-nav ul li {
+    text-align: center;
+    line-height: 50px;
   }
   .header__container .header-buttons button#header-menu {
     display: flex;
