@@ -1,14 +1,12 @@
 export function updateProgress(audio, updateLine) {
   const progressContainer = document.querySelector(".progress-wrapper");
-  let isDragging = true;
+  let isDragging = false;
 
   function setProgressTimeline(e) {
     if (isDragging) {
       const width = this.clientWidth;
       const clickX = e.clientX - this.getBoundingClientRect().left;
       const duration = audio.duration;
-
-      console.log(clickX);
 
       audio.currentTime = (clickX / width) * duration;
     }
