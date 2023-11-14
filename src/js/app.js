@@ -36,23 +36,26 @@ const list = document.querySelector(".explore-more-list");
 const parentRate = document.querySelector(".rate-list");
 const rateElements = parentRate.querySelectorAll(".list-item");
 
-state.data = await getData();
+document.addEventListener("DOMContentLoaded", async function () {
+  try {
+    state.data = await getData();
 
-flsFunctions.isWebp();
+    flsFunctions.isWebp();
 
-showNavbar();
-clickNavbar(state.data, sortItems, renderItems, ItemElement, list);
+    showNavbar();
+    clickNavbar(state.data, sortItems, renderItems, ItemElement, list);
 
-window.addEventListener("load", () => {
-  loadIntroAudio(introAudio);
-  loadAudio(state.data[state.audioStartIndex], setVolume);
+    loadIntroAudio(introAudio);
+    loadAudio(state.data[state.audioStartIndex], setVolume);
+    renderItems(state.data, ItemElement, list, addActive);
 
-  renderItems(state.data, ItemElement, list, addActive);
+    playPauseAudio(state.isPlaying, audio, playerContainer);
+    playPauseAudio(state.isPlaying, introAudio, popularContainer);
+    switchAudio(state.audioStartIndex, loadAudio, state.data);
+    updateProgress(audio, updateTimeline);
+    addActive(rateElements);
+    switchRate(parentRate, monthSum, yearSum, monthDate, yearDate);
+  } catch (error) {
+    alert("Помилка при отриманні даних: " + error.message);
+  }
 });
-
-playPauseAudio(state.isPlaying, audio, playerContainer);
-playPauseAudio(state.isPlaying, introAudio, popularContainer);
-switchAudio(state.audioStartIndex, loadAudio, state.data);
-updateProgress(audio, updateTimeline);
-addActive(rateElements);
-switchRate(parentRate, monthSum, yearSum, monthDate, yearDate);
