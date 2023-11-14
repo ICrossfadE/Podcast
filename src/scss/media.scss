@@ -61,6 +61,7 @@
       flex-direction: column;
       justify-content: center;
       position: absolute;
+      padding: 50px 0;
       width: clamp(7.5rem, 5.714rem + 8.93vw, 10rem);
       height: 100%;
       top: clamp(5.375rem, 4.884rem + 2.46vw, 6.063rem);
@@ -80,12 +81,14 @@
     }
 
     .header-buttons {
+      // cursor: not-allowed;
+
       button#header-menu {
         display: flex;
         align-items: center;
         justify-content: center;
         transition: all 0.5s ease;
-        cursor: pointer;
+        cursor: not-allowed;
       }
     }
   }
@@ -164,6 +167,16 @@
       }
     }
   }
+
+  .audio-player__navigation {
+    .audio-navigation {
+      div {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // =======================================================
 }
 
 @media (max-width: 680px) {

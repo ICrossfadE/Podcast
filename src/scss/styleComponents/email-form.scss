@@ -54,7 +54,7 @@
           color: #fff;
         }
 
-        button {
+        #form-button {
           padding: 16px 50px;
           font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
           /*320 - 768 / 14px - 16px*/
@@ -64,6 +64,13 @@
           color: #fff;
           border-radius: 50px;
           background: #00eb6c;
+          transition: 0.2s;
+        }
+
+        #form-button:hover {
+          background: #fff;
+          color: #191d23;
+          transition: 0.2s;
         }
       }
     }

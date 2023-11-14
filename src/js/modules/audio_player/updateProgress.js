@@ -1,15 +1,33 @@
 export function updateProgress(audio, updateLine) {
   const progressContainer = document.querySelector(".progress-wrapper");
+  let isDragging = true;
 
   function setProgressTimeline(e) {
-    const width = this.clientWidth;
-    const clickX = e.offsetX;
-    const duration = audio.duration;
+    if (isDragging) {
+      const width = this.clientWidth;
+      const clickX = e.clientX - this.getBoundingClientRect().left;
+      const duration = audio.duration;
 
-    audio.currentTime = (clickX / width) * duration;
+      console.log(clickX);
+
+      audio.currentTime = (clickX / width) * duration;
+    }
   }
 
-  audio.addEventListener("timeupdate", updateLine);
+  function startDragging(e) {
+    isDragging = true;
+    setProgressTimeline.call(progressContainer, e);
 
-  progressContainer.addEventListener("click", setProgressTimeline);
+    progressContainer.addEventListener("mousemove", setProgressTimeline);
+    progressContainer.addEventListener("mouseup", stopDragging);
+  }
+
+  function stopDragging() {
+    isDragging = false;
+    progressContainer.removeEventListener("mousemove", setProgressTimeline);
+    progressContainer.removeEventListener("mouseup", stopDragging);
+  }
+
+  progressContainer.addEventListener("mousedown", startDragging);
+  audio.addEventListener("timeupdate", updateLine);
 }

@@ -36,6 +36,12 @@ const list = document.querySelector(".explore-more-list");
 const parentRate = document.querySelector(".rate-list");
 const rateElements = parentRate.querySelectorAll(".list-item");
 
+const formButton = document.querySelector("#form-button");
+
+formButton.addEventListener("click", (event) => {
+  event.preventDefault();
+});
+
 document.addEventListener("DOMContentLoaded", async function () {
   try {
     state.data = await getData();

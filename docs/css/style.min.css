@@ -87,7 +87,6 @@ header .header__container .header-logo span::before {
 header .header__container .header-nav {
   transition: all 0.5s ease;
   height: max-content;
-  height: 420px;
 }
 header .header__container .header-nav ul {
   display: flex;
@@ -100,6 +99,9 @@ header .header__container .header-nav ul {
 }
 header .header__container .header-nav ul li {
   cursor: pointer;
+}
+header .header__container .header-nav.open ul li {
+  cursor: not-allowed;
 }
 header .header__container .open {
   left: 0%;
@@ -306,9 +308,11 @@ header .header__container .header-buttons button:nth-last-child(2) {
   color: #191d23;
   font-size: clamp(0.875rem, 0.69rem + 0.93vw, 1.25rem); /*320 - 968 / 18px - 20px*/
   font-weight: 700;
+  text-wrap: nowrap;
 }
 .audio-player__container .audio-player__wrapper .audio-player-info .audio-player-description .audio-episode {
   font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
+  text-wrap: nowrap;
 }
 .audio-player__container .audio-player__wrapper .audio-player-info .audio-player-description .audio-timeline {
   color: #191d23;
@@ -375,12 +379,26 @@ header .header__container .header-buttons button:nth-last-child(2) {
 }
 .audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation .audio-volume .volume-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   height: 4px;
   width: 4px;
   border-radius: 50%;
   background: #191d23;
   box-shadow: -402px 0 0 400px #38383a;
   transition: width 0.1s linear;
+}
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation .audio-volume .volume-slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background: #191d23;
+  box-shadow: -402px 0 0 400px #38383a;
+  transition: width 0.1s linear;
+}
+.audio-player__container .audio-player__wrapper .audio-player__navigation .audio-navigation .audio-volume .ri-volume-up-fill {
+  cursor: pointer;
 }
 .audio-player__container .audio-player__wrapper .audio-player__navigation .audio-player-timeline {
   display: flex;
@@ -834,6 +852,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   border-radius: 30px;
   background: #fff;
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.07);
+  user-select: none;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide .title {
   font-size: clamp(1.125rem, 0.946rem + 0.89vw, 1.375rem);
@@ -1299,7 +1318,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   letter-spacing: -0.2px;
   color: #fff;
 }
-.email-form-wrapper .email-form-block .form-content form button {
+.email-form-wrapper .email-form-block .form-content form #form-button {
   padding: 16px 50px;
   font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1rem);
   /*320 - 768 / 14px - 16px*/
@@ -1309,6 +1328,12 @@ header .header__container .header-buttons button:nth-last-child(2) {
   color: #fff;
   border-radius: 50px;
   background: #00eb6c;
+  transition: 0.2s;
+}
+.email-form-wrapper .email-form-block .form-content form #form-button:hover {
+  background: #fff;
+  color: #191d23;
+  transition: 0.2s;
 }
 .email-form-wrapper .email-form-block .images-content {
   position: absolute;
@@ -1480,6 +1505,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
     flex-direction: column;
     justify-content: center;
     position: absolute;
+    padding: 50px 0;
     width: clamp(7.5rem, 5.714rem + 8.93vw, 10rem);
     height: 100%;
     top: clamp(5.375rem, 4.884rem + 2.46vw, 6.063rem);
@@ -1500,7 +1526,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease;
-    cursor: pointer;
+    cursor: not-allowed;
   }
   .header-block__container .header-block__wrapper {
     width: 72.0967741935%;
@@ -1546,6 +1572,9 @@ header .header__container .header-buttons button:nth-last-child(2) {
   .email-form-wrapper .email-form-block .form-content {
     padding: 62px clamp(1rem, -2.571rem + 17.86vw, 6rem);
     /*320 - 768 /  x- 16px - 96px*/
+  }
+  .audio-player__navigation .audio-navigation div {
+    cursor: not-allowed;
   }
 }
 @media (max-width: 680px) {

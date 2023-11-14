@@ -36,7 +36,6 @@ header {
     .header-nav {
       transition: all 0.5s ease;
       height: max-content;
-      height: 420px;
 
       ul {
         display: flex;
@@ -53,7 +52,16 @@ header {
       }
     }
 
+    .header-nav.open {
+      ul {
+        li {
+          cursor: not-allowed;
+        }
+      }
+    }
+
     .open {
+      // height: 360px;
       left: 0%;
       transition: all 0.5s ease;
     }
