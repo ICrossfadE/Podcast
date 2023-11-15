@@ -1,17 +1,27 @@
 import * as flsFunctions from "./modules/isWebp.js";
-import { getData } from "./modules/getData.js";
 import { swiper } from "./modules/swiper.js";
-import { addActive } from "./modules/addActive.js";
+
+import { state } from "./modules/audio_player/state.js";
+import { getData } from "./modules/getData.js";
+
 import { showNavbar } from "./modules/showNavbar.js";
-import { loadAudio } from "./modules/audio_player/loadAudio.js";
+import { addActive } from "./modules/addActive.js";
+
+import { ItemElement } from "./modules/items_audio/itemCreate.js";
+import { renderItems } from "./modules/items_audio/renderItems.js";
+import { sortItems } from "./modules/sortItems.js";
+import { clickNavbar } from "./modules/clickNavbar.js";
+
+import { setVolume } from "./modules/audio_player/setVolume.js";
+import { muteVolume } from "./modules/audio_player/muteVolume.js";
 import { loadIntroAudio } from "./modules/audio_player/loadIntroAudio.js";
+import { loadAudio } from "./modules/audio_player/loadAudio.js";
+
 import { playPauseAudio } from "./modules/audio_player/playPauseAudio.js";
 import { switchAudio } from "./modules/audio_player/switchAudio.js";
-import { switchRate } from "./modules/switchRate/switchRate.js";
-import { updateProgress } from "./modules/audio_player/updateProgress.js";
+
 import { updateTimeline } from "./modules/audio_player/updateTimeLine.js";
-import { setVolume } from "./modules/audio_player/setVolume.js";
-import { state } from "./modules/audio_player/state.js";
+import { updateProgress } from "./modules/audio_player/updateProgress.js";
 
 import {
   monthSum,
@@ -19,12 +29,7 @@ import {
   monthDate,
   yearDate,
 } from "./modules/switchRate/rateSum.js";
-
-import { ItemElement } from "./modules/items_audio/itemCreate.js";
-import { renderItems } from "./modules/items_audio/renderItems.js";
-import { sortItems } from "./modules/sortItems.js";
-
-import { clickNavbar } from "./modules/clickNavbar.js";
+import { switchRate } from "./modules/switchRate/switchRate.js";
 
 const audio = document.querySelector(".audio-content");
 const introAudio = document.querySelector(".intro-audio-content");
@@ -52,7 +57,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     clickNavbar(state.data, sortItems, renderItems, ItemElement, list);
 
     loadIntroAudio(introAudio);
-    loadAudio(state.data[state.audioStartIndex], setVolume);
+    loadAudio(state.data[state.audioStartIndex], setVolume, muteVolume);
     renderItems(state.data, ItemElement, list, addActive);
 
     playPauseAudio(state.isPlaying, audio, playerContainer);

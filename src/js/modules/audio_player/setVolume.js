@@ -1,3 +1,3 @@
 export function setVolume(audio, volumeSlider) {
-  audio.volume = volumeSlider.value / 100;
+  return (audio.volume = volumeSlider.value / 100);
 }
