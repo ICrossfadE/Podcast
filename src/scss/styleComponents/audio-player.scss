@@ -82,10 +82,12 @@
             1.25rem
           ); /*320 - 968 / 18px - 20px*/
           font-weight: 700;
+          text-wrap: nowrap;
         }
 
         .audio-episode {
           font-size: clamp(0.75rem, 0.571rem + 0.89vw, 1rem);
+          text-wrap: nowrap;
         }
 
         .audio-timeline {
@@ -164,12 +166,27 @@
 
           .volume-slider::-webkit-slider-thumb {
             -webkit-appearance: none;
+            appearance: none;
             height: 4px;
             width: 4px;
             border-radius: 50%;
             background: #191d23;
             box-shadow: -402px 0 0 400px $--gray-color;
             transition: width 0.1s linear;
+          }
+          .volume-slider::-moz-range-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background: #191d23;
+            box-shadow: -402px 0 0 400px $--gray-color;
+            transition: width 0.1s linear;
+          }
+
+          .ri-volume-up-fill {
+            cursor: pointer;
           }
         }
       }
