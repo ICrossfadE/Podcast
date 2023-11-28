@@ -1,4 +1,4 @@
-import webp from "gulp-webp";
+import webp from "gulp-webp"; // @ts-nocheck
 import imagemin from "gulp-imagemin";
 
 export const images = () => {
@@ -13,7 +13,7 @@ export const images = () => {
       )
     )
     .pipe(app.plugins.newer(app.path.build.images))
-    .pipe(app.plugins.if(app.isBuild, webp()))
+    .pipe(webp())
     .pipe(app.plugins.if(app.isBuild, app.gulp.dest(app.path.build.images)))
     .pipe(app.plugins.if(app.isBuild, app.gulp.src(app.path.src.images)))
     .pipe(app.plugins.if(app.isBuild, app.plugins.newer(app.path.build.images)))
@@ -24,7 +24,7 @@ export const images = () => {
           progressive: true,
           // svgoPlugins: [{ removeViewBox: flase }],
           interlaced: true,
-          optimizationLevel: 3, // 0 to 7
+          optimizationLevel: 4, // 0 to 7
         })
       )
     )
