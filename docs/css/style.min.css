@@ -28,7 +28,7 @@ body section:nth-child(5) {
   background: #fff;
 }
 body section:nth-child(6) {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.46) 100%), url(../img/img/backgrounds/microphone.jpg), lightgray 0px -1163.728px/100% 312.139% no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.46) 100%), url(../img/img/backgrounds/microphone.webp), lightgray 0px -1163.728px/100% 312.139% no-repeat;
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -44,7 +44,7 @@ body section:nth-child(9) {
 }
 
 .header-wrapper {
-  background-image: url(../img/img/backgrounds/main.jpg);
+  background-image: url(../img/img/backgrounds/main.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -463,7 +463,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   height: clamp(28.75rem, 24.732rem + 20.09vw, 34.375rem); /*320 - 768 / 460px - 500px*/
   border-radius: 60px;
   user-select: none;
-  background-image: url(./../img/img/backgrounds/work-2.jpg);
+  background-image: url(./../img/img/backgrounds/work-2.webp);
   background-size: cover;
   background-position: center;
 }
@@ -473,7 +473,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   height: clamp(18.5rem, 14.036rem + 22.32vw, 24.75rem); /*320 - 768 / 296px - 396px*/
   border-radius: 60px;
   user-select: none;
-  background-image: url(./../img/img/backgrounds/work-1.jpg);
+  background-image: url(./../img/img/backgrounds/work-1.webp);
   background-size: cover;
   background-position-x: 72%;
 }
@@ -485,7 +485,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   width: 55px;
   height: 55px;
   border-radius: 10px;
-  background-image: url(../img/icons/Group-17767.svg);
+  background-image: url(../img/icons/Group-17767.webp);
   background-size: cover;
   cursor: pointer;
   filter: invert(1);
@@ -900,37 +900,37 @@ header .header__container .header-buttons button:nth-last-child(2) {
   color: #191d23;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(1) .author .img {
-  background: url(./../img/img/author/author-4.jpg);
+  background: url(./../img/img/author/author-4.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(2) .author .img {
-  background: url(./../img/img/author/author-20.jpg);
+  background: url(./../img/img/author/author-20.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(3) .author .img {
-  background: url(./../img/img/author/author-18.jpg);
+  background: url(./../img/img/author/author-18.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(4) .author .img {
-  background: url(./../img/img/author/author-28.jpg);
+  background: url(./../img/img/author/author-28.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(5) .author .img {
-  background: url(./../img/img/author/author-36.jpg);
+  background: url(./../img/img/author/author-36.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reviews-wrapper .reviews-swiper .swiper-wrapper .swiper-slide:nth-child(6) .author .img {
-  background: url(./../img/img/author/author-11.jpg);
+  background: url(./../img/img/author/author-11.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1338,7 +1338,7 @@ header .header__container .header-buttons button:nth-last-child(2) {
   bottom: 0;
   width: 263px;
   height: 323px;
-  background: url(./../img/img/backgrounds/decorate.png), no-repeat;
+  background: url(./../img/img/backgrounds/decorate.webp), no-repeat;
   background-size: cover;
 }
 .email-form-wrapper .email-form-block .images-content::after {
