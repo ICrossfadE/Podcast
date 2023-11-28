@@ -11,7 +11,7 @@ export async function loadAudio(audioItem, setVolume, muteVolume) {
   const progressLine = document.querySelector(".progress-line");
   const durationTimeLine = document.querySelector(".total-duration");
 
-  audioImages.src = `./img/img/author/${audioItem.details.img}.jpg`;
+  audioImages.src = `./img/img/author/${audioItem.details.img}.webp`;
   audioAuthor.innerHTML = audioItem.details.author;
   audioTheme.innerHTML = audioItem.details.title;
   audioEpisode.innerHTML = `Episode ${audioItem.details.episode} - Season ${audioItem.details.season}`;

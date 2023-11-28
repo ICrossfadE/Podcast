@@ -15,7 +15,7 @@ class ItemElement {
 
     listItem.innerHTML = `
     <div class="item-audio-art">
-        <img src="./img/img/author/${this.img}.jpg" alt="author" />
+        <img src="./img/img/author/${this.img}.webp" alt="author" />
     </div>
 
     <div class="description">

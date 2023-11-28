@@ -60,7 +60,7 @@ body {
         rgba(0, 0, 0, 0.8) 0%,
         rgba(0, 0, 0, 0.46) 100%
       ),
-      url(@img/img/backgrounds/microphone.jpg),
+      url(@img/img/backgrounds/microphone.webp),
       lightgray 0px -1163.728px / 100% 312.139% no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -80,7 +80,7 @@ body {
 // ===========================================================================BODY
 
 .header-wrapper {
-  background-image: url(@img/img/backgrounds/main.jpg);
+  background-image: url(@img/img/backgrounds/main.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
